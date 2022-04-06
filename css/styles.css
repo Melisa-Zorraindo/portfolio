@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  background: #3e3e3e;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  font-family: Architects Daughter;
+  font-size: 1.5em;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+a {
+  padding: 0.2rem 2rem;
+  text-decoration: none;
+  color: white;
+  transition: all 1s;
+  position: relative;
+}
+
+.font-effect-neon {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.font-effect-neon::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 0.2rem;
+  background-color: #fff;
+  box-shadow: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
+    0 0 1em #f0f;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.img-box {
+  flex: 0 0 400px;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta {
+  font-family: Architects Daughter;
+  padding: 0.5rem 5rem;
+  font-size: 1.8rem;
+  transition: all 1s;
+  align-self: flex-start;
+  margin-top: 2rem;
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
+    0 0 1em #f0f;
+}
+
+.cta:hover {
+  box-shadow: none;
+  border: 2px solid #f0f;
+}
