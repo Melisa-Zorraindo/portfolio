@@ -4,6 +4,7 @@ body {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -55,14 +56,15 @@ nav a.active::after {
     0 0 1em #f0f;
 }
 
-main {
+.hero-section,
+.projects-container {
+  /* max-width: 1200px; */
+  height: 700px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 90vh;
-  gap: 3rem;
-  max-width: 1200px;
   margin: auto;
+  align-items: center;
+  gap: 3rem;
 }
 
 .img-box {
@@ -79,9 +81,11 @@ h1 {
   margin-bottom: 0;
 }
 
-.intro {
+.intro,
+.project-info {
   display: flex;
   flex-direction: column;
+  flex: 0 0 700px;
 }
 
 .cta {
@@ -98,4 +102,93 @@ h1 {
 .cta:hover {
   box-shadow: none;
   border: 2px solid #f0f;
+}
+
+.projects-section {
+  background-color: #515151;
+  padding-bottom: 4rem;
+}
+
+.projects-container {
+  height: auto;
+  flex-wrap: wrap;
+  margin: 6rem 0;
+}
+
+.project-two {
+  flex-direction: row-reverse;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 2.5em;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+h3 {
+  margin-bottom: 0;
+}
+
+.img-box-projects {
+  flex: 0 0 300px;
+}
+
+.project-info {
+  flex: 0 0 700px;
+}
+
+.cta-small-one {
+  font-size: 1.5rem;
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
+    0 0 0.8em #00dbff, 0 0 1em #00dbff;
+}
+
+.cta-small-one:hover {
+  box-shadow: none;
+  border: 2px solid #00dbff;
+}
+
+.cta-small-two {
+  font-size: 1.5rem;
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
+    0 0 0.8em #f0d109, 0 0 1em #f0d109;
+}
+
+.cta-small-two:hover {
+  box-shadow: none;
+  border: 2px solid #f0d109;
+}
+
+.cta-small-three {
+  font-size: 1.5rem;
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #bf7, 0 0 0.6em #00ff04,
+    0 0 0.8em #00ff04, 0 0 1em #00ff04;
+}
+
+.cta-small-three:hover {
+  box-shadow: none;
+  border: 2px solid #00ff04;
+}
+
+.socials-section {
+  background-color: #6c6c6c;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4rem;
+  justify-content: center;
+}
+
+.socials-section h2 {
+  flex: 0 0 100%;
+}
+
+.socials-section i {
+  font-size: 8rem;
+}
+
+.font-effect-neon:hover {
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
+    0 0 1em #f0f;
 }
