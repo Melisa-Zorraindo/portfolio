@@ -186,6 +186,7 @@ h3 {
 
 .socials-section i {
   font-size: 8rem;
+  transition: 1s;
 }
 
 .font-effect-neon:hover {
