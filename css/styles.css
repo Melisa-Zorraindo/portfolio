@@ -96,7 +96,7 @@ h1 {
   padding: 0.5rem 5rem;
   font-size: 1.8rem;
   transition: all 1s;
-  align-self: flex-start;
+  align-self: flex-end;
   margin-top: 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
     0 0 1em #f0f;
@@ -151,7 +151,6 @@ h3 {
   padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
     0 0 0.8em #00dbff, 0 0 1em #00dbff;
-  align-self: flex-end;
 }
 
 .cta-small-one:hover {
@@ -164,6 +163,7 @@ h3 {
   padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
     0 0 0.8em #f0d109, 0 0 1em #f0d109;
+  align-self: flex-start;
 }
 
 .cta-small-two:hover {
@@ -176,7 +176,6 @@ h3 {
   padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #bf7, 0 0 0.6em #00ff04,
     0 0 0.8em #00ff04, 0 0 1em #00ff04;
-  align-self: flex-end;
 }
 
 .cta-small-three:hover {
