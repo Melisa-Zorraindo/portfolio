@@ -58,13 +58,12 @@ nav a.active::after {
 
 .hero-section,
 .projects-container {
-  /* max-width: 1200px; */
-  height: 700px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: auto;
   align-items: center;
   gap: 3rem;
+  margin: 6rem auto;
 }
 
 .img-box {
@@ -105,17 +104,15 @@ h1 {
 }
 
 .projects-section {
-  background-color: #515151;
+  background-color: #6c6c6c;
   padding-bottom: 4rem;
 }
 
 .projects-container {
   height: auto;
-  flex-wrap: wrap;
-  margin: 6rem 0;
 }
 
-.project-two {
+.project-even {
   flex-direction: row-reverse;
 }
 
@@ -140,7 +137,8 @@ h3 {
 }
 
 .cta-small-one {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
     0 0 0.8em #00dbff, 0 0 1em #00dbff;
 }
@@ -151,7 +149,8 @@ h3 {
 }
 
 .cta-small-two {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
     0 0 0.8em #f0d109, 0 0 1em #f0d109;
 }
@@ -162,7 +161,8 @@ h3 {
 }
 
 .cta-small-three {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #bf7, 0 0 0.6em #00ff04,
     0 0 0.8em #00ff04, 0 0 1em #00ff04;
 }
@@ -172,12 +172,22 @@ h3 {
   border: 2px solid #00ff04;
 }
 
+.all-projects-container {
+  max-width: 1000px;
+  margin: 6rem auto;
+}
+
+.all-projects-container p {
+  margin-bottom: 3rem;
+}
+
 .socials-section {
   background-color: #6c6c6c;
   display: flex;
   flex-wrap: wrap;
-  gap: 4rem;
+  gap: 2rem 4rem;
   justify-content: center;
+  padding-bottom: 6rem;
 }
 
 .socials-section h2 {
@@ -185,11 +195,32 @@ h3 {
 }
 
 .socials-section i {
-  font-size: 8rem;
+  font-size: 6rem;
   transition: 1s;
 }
 
 .font-effect-neon:hover {
-  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
+  text-shadow: 0 0 0.2em #000, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
     0 0 1em #f0f;
+}
+
+.copyright {
+  line-height: 3rem;
+  text-align: center;
+  background-color: #6c6c6c;
+}
+
+address {
+  margin: 2rem auto;
+  font-style: normal;
+}
+
+address a {
+  display: block;
+  text-align: center;
+}
+
+address i {
+  font-size: 1.5rem;
+  margin: 0.5rem;
 }
