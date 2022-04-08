@@ -1,0 +1,24 @@
+.more-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 2rem 4rem;
+}
+
+.more-projects h2 {
+  flex: 0 0 100%;
+}
+
+.more-projects-card {
+  flex: 0 0 350px;
+  margin: 3rem auto;
+}
+
+.more-projects-card img {
+  width: 150px;
+  justify-self: center;
+}
+
+.project-info-card p {
+  margin-bottom: 2rem;
+}

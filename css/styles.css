@@ -235,6 +235,9 @@ address i {
 }
 
 .copyright {
+  color: #3e3e3e;
+  background-color: #fff;
+  font-weight: 500;
   line-height: 3rem;
   text-align: center;
 }
