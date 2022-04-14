@@ -10,23 +10,43 @@ body {
   scroll-behavior: smooth;
 }
 
+.burger-menu {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 2rem;
+  margin: 0.5rem auto;
+  width: 100%;
+  text-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
+    0 0 1em #f0f;
+}
+
 nav {
   font-weight: 700;
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  background-color: #3e3e3e;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-150%);
+  transition: transform 0.5s ease;
 }
 
 ul {
   list-style-type: none;
-  display: flex;
-  gap: 3rem;
-  justify-content: space-around;
-  align-items: center;
+  text-align: center;
+  padding-left: 0;
+}
+
+nav li {
+  line-height: 3rem;
+  border-bottom: 1px solid white;
 }
 
 a {
   text-decoration: none;
   color: white;
   position: relative;
+  display: block;
 }
 
 nav a::after {
@@ -44,7 +64,7 @@ nav a::after {
 
 nav a:hover::after {
   height: 0.1rem;
-  width: 50%;
+  width: 10%;
 }
 
 nav a.active::after {
@@ -57,6 +77,30 @@ nav a.active::after {
   background-color: #fff;
   box-shadow: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
     0 0 1em #f0f;
+}
+
+img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+h1 {
+  font: 1.8rem "Architects Daughter", cursive;
+  margin-bottom: 0;
+}
+
+h2 {
+  font: 2rem "Architects Daughter", cursive;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ---------- Sections ---------- */
@@ -73,48 +117,14 @@ nav a.active::after {
 }
 
 .img-box {
-  /* flex: 0 0 400px; Larger screens */
   flex: 0 0 90%;
-}
-
-img {
-  width: 100%;
-  border-radius: 50%;
-}
-
-h1 {
-  /* font-family: Architects Daughter; */
-  /* font-size: 2rem; larger screens */
-  font: 1.8rem Architects Daughter;
-  margin-bottom: 0;
 }
 
 .intro,
 .project-info {
   display: flex;
   flex-direction: column;
-  /* flex: 0 0 700px; Larger screens */
   flex: 0 0 90%;
-}
-
-/* ---------- Calls to Action ---------- */
-
-.cta {
-  font-family: "Aleo", serif;
-  font-weight: 700;
-  text-align: center; /* remove larger screens */
-  /* padding: 0.5rem 5rem; larger screens */
-  font-size: 1.8rem;
-  transition: all 1s;
-  /* align-self: flex-end; larger screens */
-  margin-top: 2rem;
-  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
-    0 0 1em #f0f;
-}
-
-.cta:hover {
-  box-shadow: none;
-  border: 2px solid #f0f;
 }
 
 .projects-section {
@@ -130,69 +140,12 @@ h1 {
   flex-direction: row-reverse;
 }
 
-h2 {
-  /* font-size: 2.5rem; larger screens */
-  font: 2rem Architects Daughter;
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 1rem;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 1.5rem;
-  margin-top: 0; /*remove from queries*/
-  margin-bottom: 0;
-}
-
 .img-box-projects {
-  /* flex: 0 0 300px; larger screens */
   flex: 0 0 90%;
 }
 
 .project-info {
-  /* flex: 0 0 700px; media queries */
   flex: 0 0 90%;
-  /* border-top: 1px solid white; try only this one for larger screens */
-  /*border-bottom: 1px solid white;*/ /*this fr media queries*/
-}
-
-.cta-small-one {
-  /* margin-bottom: 2rem; */ /*this for media queries*/
-  font-size: 1.2rem;
-  padding: 0.2rem 2rem;
-  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
-    0 0 0.8em #00dbff, 0 0 1em #00dbff;
-}
-
-.cta-small-one:hover {
-  box-shadow: none;
-  border: 2px solid #00dbff;
-}
-
-.cta-small-two {
-  font-size: 1.2rem;
-  padding: 0.2rem 2rem;
-  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
-    0 0 0.8em #f0d109, 0 0 1em #f0d109;
-  /* align-self: flex-start; media queries */
-}
-
-.cta-small-two:hover {
-  box-shadow: none;
-  border: 2px solid #f0d109;
-}
-
-.cta-small-three {
-  font-size: 1.2rem;
-  padding: 0.2rem 2rem;
-  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #bf7, 0 0 0.6em #00ff04,
-    0 0 0.8em #00ff04, 0 0 1em #00ff04;
-}
-
-.cta-small-three:hover {
-  box-shadow: none;
-  border: 2px solid #00ff04;
 }
 
 .all-projects-container {
@@ -265,4 +218,61 @@ address i {
   font-weight: 700;
   line-height: 3rem;
   text-align: center;
+}
+
+/* ---------- Calls to Action ---------- */
+
+.cta {
+  font: 1.8rem "Aleo", serif;
+  font-weight: 700;
+  text-align: center; /* remove larger screens */
+  /* padding: 0.5rem 5rem; larger screens */
+  transition: all 1s;
+  /* align-self: flex-end; larger screens */
+  margin-top: 2rem;
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
+    0 0 1em #f0f;
+}
+
+.cta:hover {
+  box-shadow: none;
+  border: 2px solid #f0f;
+}
+
+.cta-small {
+  /* margin-bottom: 2rem; */ /*this for media queries*/
+  font-size: 1.2rem;
+  padding: 0.2rem 2rem;
+}
+
+.cta-small:hover {
+  box-shadow: none;
+}
+
+.cta-one {
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
+    0 0 0.8em #00dbff, 0 0 1em #00dbff;
+}
+
+.cta-one:hover {
+  border: 2px solid #00dbff;
+}
+
+.cta-two {
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
+    0 0 0.8em #f0d109, 0 0 1em #f0d109;
+  /* align-self: flex-start; media queries */
+}
+
+.cta-two:hover {
+  border: 2px solid #f0d109;
+}
+
+.cta-three {
+  box-shadow: 0 0 0.2em #fff, 0 0 0.4em #bf7, 0 0 0.6em #00ff04,
+    0 0 0.8em #00ff04, 0 0 1em #00ff04;
+}
+
+.cta-three:hover {
+  border: 2px solid #00ff04;
 }
