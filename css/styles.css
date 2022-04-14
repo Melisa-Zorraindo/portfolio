@@ -183,7 +183,7 @@ h3 {
 
 .fa-github-square,
 .fa-linkedin {
-  font-size: 6rem;
+  font-size: 5rem;
   transition: 1s;
 }
 
@@ -225,10 +225,8 @@ address i {
 .cta {
   font: 1.8rem "Aleo", serif;
   font-weight: 700;
-  text-align: center; /* remove larger screens */
-  /* padding: 0.5rem 5rem; larger screens */
+  text-align: center;
   transition: all 1s;
-  /* align-self: flex-end; larger screens */
   margin-top: 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
     0 0 1em #f0f;
@@ -240,7 +238,6 @@ address i {
 }
 
 .cta-small {
-  /* margin-bottom: 2rem; */ /*this for media queries*/
   font-size: 1.2rem;
   padding: 0.2rem 2rem;
 }
@@ -261,7 +258,6 @@ address i {
 .cta-two {
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
     0 0 0.8em #f0d109, 0 0 1em #f0d109;
-  /* align-self: flex-start; media queries */
 }
 
 .cta-two:hover {
