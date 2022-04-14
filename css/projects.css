@@ -1,8 +1,13 @@
+.projects-section {
+  background-color: #3e3e3e;
+}
+
 .more-projects {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem 4rem;
+  background-color: #6c6c6c;
 }
 
 .more-projects h2 {

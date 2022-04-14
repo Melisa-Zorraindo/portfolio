@@ -21,19 +21,21 @@
   </head>
   <body>
     <header>
-      <button aria-label="open hamburger menu" class="burger-menu">
-        <span class="sr-only">open hamburger menu</span>
+      <button aria-label="toggle hamburger menu" class="burger-menu">
+        <span class="sr-only">toggle hamburger menu</span>
         <i class="fas fa-caret-down"></i>
       </button>
       <nav>
         <ul>
-          <!-- <li>
-            <a href="/index.html">home</a>
-          </li> -->
-          <li><a href="/sections/cv.html">cv</a></li>
+          <li class="hidden-large-screens">
+            <a href="/index.html" class="active">home</a>
+          </li>
+          <li><a href="/sections/cv.html" target="_blank">cv</a></li>
           <li><a href="/sections/projects.html">projects</a></li>
           <li>
-            <a href="/index.html" class="active"><i class="fas fa-home"></i></a>
+            <a href="/index.html" class="active hidden-small-screens"
+              ><i class="fas fa-home"></i
+            ></a>
           </li>
           <li><a href="/index.html#socials">socials</a></li>
           <li><a href="/index.html#contact">hire me</a></li>
@@ -174,7 +176,7 @@
           </address>
         </div>
       </section>
-      <div class="copyright">2022 Melisa Zorraindo&#x2122;</div>
+      <div class="copyright">&copy;2022 Melisa Zorraindo</div>
     </main>
     <script src="/js/script.js"></script>
   </body>
