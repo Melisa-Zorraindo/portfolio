@@ -1,3 +1,5 @@
+/* ---------- Global styles ---------- */
+
 body {
   margin: 0;
   background: #3e3e3e;
@@ -57,6 +59,8 @@ nav a.active::after {
     0 0 1em #f0f;
 }
 
+/* ---------- Sections ---------- */
+
 .hero-section,
 .projects-container {
   min-height: 80vh;
@@ -69,7 +73,8 @@ nav a.active::after {
 }
 
 .img-box {
-  flex: 0 0 400px;
+  /* flex: 0 0 400px; Larger screens */
+  flex: 0 0 90%;
 }
 
 img {
@@ -78,8 +83,9 @@ img {
 }
 
 h1 {
-  font-family: Architects Daughter;
-  font-size: 2rem;
+  /* font-family: Architects Daughter; */
+  /* font-size: 2rem; larger screens */
+  font: 1.8rem Architects Daughter;
   margin-bottom: 0;
 }
 
@@ -87,16 +93,20 @@ h1 {
 .project-info {
   display: flex;
   flex-direction: column;
-  flex: 0 0 700px;
+  /* flex: 0 0 700px; Larger screens */
+  flex: 0 0 90%;
 }
+
+/* ---------- Calls to Action ---------- */
 
 .cta {
   font-family: "Aleo", serif;
   font-weight: 700;
-  padding: 0.5rem 5rem;
+  text-align: center; /* remove larger screens */
+  /* padding: 0.5rem 5rem; larger screens */
   font-size: 1.8rem;
   transition: all 1s;
-  align-self: flex-end;
+  /* align-self: flex-end; larger screens */
   margin-top: 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
     0 0 1em #f0f;
@@ -121,27 +131,29 @@ h1 {
 }
 
 h2 {
-  font-family: Architects Daughter;
-  font-size: 2.5em;
+  /* font-size: 2.5rem; larger screens */
+  font: 2rem Architects Daughter;
   margin: 0 auto;
   text-align: center;
   padding-top: 1rem;
 }
 
 h3 {
-  font-family: "Aleo", serif;
   font-weight: 700;
   font-size: 1.5rem;
+  margin-top: 0; /*remove from queries*/
   margin-bottom: 0;
 }
 
 .img-box-projects {
-  flex: 0 0 300px;
+  /* flex: 0 0 300px; larger screens */
+  flex: 0 0 90%;
 }
 
 .project-info {
-  flex: 0 0 700px;
-  border-top: 1px solid white;
+  /* flex: 0 0 700px; media queries */
+  flex: 0 0 90%;
+  /* border-top: 1px solid white; try only this one for larger screens */
   /*border-bottom: 1px solid white;*/ /*this fr media queries*/
 }
 
@@ -163,7 +175,7 @@ h3 {
   padding: 0.2rem 2rem;
   box-shadow: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
     0 0 0.8em #f0d109, 0 0 1em #f0d109;
-  align-self: flex-start;
+  /* align-self: flex-start; media queries */
 }
 
 .cta-small-two:hover {
@@ -184,12 +196,16 @@ h3 {
 }
 
 .all-projects-container {
-  max-width: 1000px;
   margin: 6rem auto;
+  max-width: 90%;
 }
 
 .all-projects-container p {
   margin-bottom: 3rem;
+}
+
+.all-projects-container a {
+  display: block;
 }
 
 .contact-section {
@@ -203,6 +219,7 @@ h3 {
 .socials-box {
   display: flex;
   flex-wrap: wrap;
+  flex: 0 0 90%;
   gap: 2rem 4rem;
   justify-content: center;
 }
@@ -238,7 +255,8 @@ address i {
 }
 
 .contact-box {
-  flex: 0 0 554px;
+  flex: 0 0 90%;
+  margin-top: 4rem; /*remove from larger screens */
 }
 
 .copyright {
