@@ -124,6 +124,10 @@
     flex: 0 0 700px;
   }
 
+  .all-projects-container {
+    max-width: 1000px;
+  }
+
   /* ---------- Projects page ---------- */
 
   .more-projects-card {
