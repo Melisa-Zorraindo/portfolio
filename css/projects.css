@@ -3,14 +3,19 @@
 }
 
 .more-projects {
+  background-color: var(--light-grey);
+}
+
+.more-projects-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 2rem 4rem;
-  background-color: var(--light-grey);
+  max-width: 1200px;
+  margin: auto;
 }
 
-.more-projects h2 {
+.more-projects-box h2 {
   flex: 0 0 100%;
 }
 
