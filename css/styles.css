@@ -32,12 +32,15 @@
 
 /* ---------- Global styles ---------- */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   background: var(--dark-grey);
   color: var(--white);
   font: var(--body);
-  scroll-behavior: smooth;
 }
 
 .burger-menu {
