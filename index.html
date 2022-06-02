@@ -21,9 +21,10 @@
   </head>
   <body>
     <header>
-      <button aria-label="toggle hamburger menu" class="burger-menu">
+      <button aria-label="toggle hamburger menu" class="menu">
         <span class="sr-only">toggle hamburger menu</span>
-        <i class="fas fa-caret-down"></i>
+        <i class="fas fa-ellipsis-h open"></i>
+        <i class="far fa-times-circle close hidden"></i>
       </button>
       <nav>
         <ul>
@@ -37,8 +38,8 @@
               ><i class="fas fa-home"></i
             ></a>
           </li>
-          <li><a href="/index.html#socials">socials</a></li>
-          <li><a href="/index.html#contact">hire me</a></li>
+          <li><a href="#" id="socials">socials</a></li>
+          <li><a href="#" id="contact">hire me</a></li>
         </ul>
       </nav>
     </header>
@@ -70,8 +71,41 @@
         <div class="projects-container">
           <div class="img-box-projects">
             <img
+              src="/assets/images/ff-thumbnail.png"
+              alt="project title: Fitness and nutrition blog"
+            />
+          </div>
+          <div class="project-info">
+            <h3>FitFactory</h3>
+            <p>
+              Fitness and nutrition blog site. Developed in HTML, CSS &
+              JavaScript as part of the Front-end development curriculum at
+              Noroff. For this project I also created my own API.
+            </p>
+            <div class="buttons">
+              <a
+                class="cta cta-small cta-secondary"
+                href="https://fitfactory-noroff-project.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >live project &#xbb;</a
+              >
+              <a
+                class="cta cta-small"
+                href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Melisa-Zorraindo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub code &#xbb;</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="projects-container project-even">
+          <div class="img-box-projects">
+            <img
               src="/assets/images/rd-thumbnail.jpg"
               alt="project title: Rainy Days jacket retailer"
+              class="project-img"
             />
           </div>
           <div class="project-info">
@@ -81,16 +115,25 @@
               CSS & JavaScript as part of the Front-end development curriculum
               at Noroff. For this project I also created my own API.
             </p>
-            <a
-              class="cta cta-small cta-one"
-              href="https://determined-chandrasekhar-92d414.netlify.app/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >have a look &#xbb;</a
-            >
+            <div class="buttons">
+              <a
+                class="cta cta-small cta-secondary cta-reverse"
+                href="https://rainy-days-noroff-project.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >live project &#xbb;</a
+              >
+              <a
+                class="cta cta-small cta-reverse"
+                href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Melisa-Zorraindo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub code &#xbb;</a
+              >
+            </div>
           </div>
         </div>
-        <div class="projects-container project-even">
+        <div class="projects-container">
           <div class="img-box-projects">
             <img
               src="/assets/images/csm-thumbnail.jpg"
@@ -104,36 +147,26 @@
               JavaScript as part of the Front-end development curriculum at
               Noroff.
             </p>
-            <a
-              class="cta cta-small cta-two"
-              href="https://flamboyant-euler-8de9ae.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >have a look &#xbb;</a
-            >
-          </div>
-        </div>
-        <div class="projects-container">
-          <div class="img-box-projects">
-            <img src="" alt="project title: " />
-          </div>
-          <div class="project-info">
-            <h3>New project title</h3>
-            <p>
-              New project description. Tell what you have done and stress your
-              abilities
-            </p>
-            <a
-              class="cta cta-small cta-three"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >have a look &#xbb;</a
-            >
+            <div class="buttons">
+              <a
+                class="cta cta-small cta-secondary"
+                href="https://csm-noroff-project.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >live project &#xbb;</a
+              >
+              <a
+                class="cta cta-small"
+                href="https://github.com/Melisa-Zorraindo/semester-project-one"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub code &#xbb;</a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <section>
+      <!--  <section>
         <h2>All my projects</h2>
         <div class="all-projects-container">
           <h3>Want to see more?</h3>
@@ -143,29 +176,39 @@
           </p>
           <a class="cta" href="/sections/projects.html">projects &#xbb;</a>
         </div>
-      </section>
-      <section class="contact-section">
-        <div class="socials-box">
-          <h2 id="socials">Find me here</h2>
-          <div>
-            <a
-              href="https://github.com/Melisa-Zorraindo"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-github-square font-effect-neon"></i
-            ></a>
-          </div>
-          <div>
-            <a
-              href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/"
-              target="_blank"
-              rel="noopener noreferrer"
-              ><i class="fab fa-linkedin font-effect-neon"></i
-            ></a>
-          </div>
-        </div>
-        <div class="contact-box">
-          <h2 id="contact">Get in touch</h2>
+      </section> -->
+      <!-- <section class="contact-section">
+        
+        
+      </section> -->
+
+      <div class="copyright">2022 Melisa Zorraindo <sup>TM</sup></div>
+
+      <div class="socials-box hidden" id="modal-socials">
+        <button>
+          <i class="far fa-times-circle close" id="socials-close-btn"></i>
+        </button>
+        <h2>Find me here</h2>
+        <a
+          href="https://github.com/Melisa-Zorraindo"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-github-square font-effect-neon"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fab fa-linkedin font-effect-neon"></i
+        ></a>
+      </div>
+
+      <div class="contact-box hidden" id="contact-info">
+        <button>
+          <i class="far fa-times-circle close" id="contact-close-btn"></i>
+        </button>
+        <div>
+          <h2>Get in touch</h2>
           <address>
             <a href="mailto: melisa.zorraindo@gmail.com"
               ><i class="fas fa-envelope"></i>melisa.zorraindo@gmail.com</a
@@ -175,9 +218,11 @@
             >
           </address>
         </div>
-      </section>
-      <div class="copyright">&copy;2022 Melisa Zorraindo</div>
+      </div>
+
+      <div class="overlay hidden"></div>
     </main>
-    <script src="/js/script.js"></script>
+    <script src="/js/script.js" type="module"></script>
+    <script src="/js/functionality/modalpops.js" type="module"></script>
   </body>
 </html>

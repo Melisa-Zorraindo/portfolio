@@ -13,7 +13,7 @@
   /* ---------- Colours ---------- */
   --white: #fff;
   --dark-grey: #3e3e3e;
-  --light-grey: #6c6c6c;
+  --light-grey: #4c4c4c;
   --pink: #f0f;
   --blue: #00dbff;
   --green: #00ff04;
@@ -22,12 +22,13 @@
     0 0 0.8em #f0f, 0 0 1em #f0f;
   --pink-neon-light: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f,
     0 0 0.8em #f0f, 0 0 1em #f0f;
-  --blue-neon-strong: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
+  /*   --blue-neon-strong: 0 0 0.2em #fff, 0 0 0.4em #89deff, 0 0 0.6em #00dbff,
     0 0 0.8em #00dbff, 0 0 1em #00dbff;
   --green-neon-strong: 0 0 0.2em #fff, 0 0 0.4em #bf7, 0 0 0.6em #00ff04,
     0 0 0.8em #00ff04, 0 0 1em #00ff04;
   --yellow-neon-strong: 0 0 0.2em #fff, 0 0 0.4em #ffe377, 0 0 0.6em #f0d109,
-    0 0 0.8em #f0d109, 0 0 1em #f0d109;
+    0 0 0.8em #f0d109, 0 0 1em #f0d109; */
+  --white-light: 0 0 0.2em #fff, 0 0 0.4em #fff, 0 0 0.6em #fff;
 }
 
 /* ---------- Global styles ---------- */
@@ -43,7 +44,8 @@ body {
   font: var(--body);
 }
 
-.burger-menu {
+.menu,
+.close {
   color: var(--white);
   background-color: transparent;
   border: none;
@@ -51,6 +53,15 @@ body {
   margin: 0.5rem auto;
   width: 100%;
   text-shadow: var(--pink-neon-strong);
+  cursor: pointer;
+}
+
+.close {
+  text-shadow: none;
+}
+
+.hidden {
+  display: none;
 }
 
 .hidden-small-screens {
@@ -64,6 +75,8 @@ nav {
   width: 100%;
   transform: translateY(-150%);
   transition: transform 1s ease;
+  /* needed for small screens */
+  z-index: 10;
 }
 
 ul {
@@ -114,6 +127,7 @@ nav a.active::after {
 img {
   width: 100%;
   border-radius: 50%;
+  display: block;
 }
 
 h1 {
@@ -169,6 +183,8 @@ h3 {
 
 .projects-container {
   min-height: auto;
+  transform: translate3d(0, 0, 0);
+  animation: scale-in 2s both;
 }
 
 .project-even {
@@ -196,7 +212,7 @@ h3 {
   padding-bottom: 6rem;
 }
 
-.socials-box {
+/* .socials-box {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 4rem;
@@ -205,7 +221,7 @@ h3 {
 
 .socials-box h2 {
   flex: 0 0 100%;
-}
+} */
 
 .fa-github-square,
 .fa-linkedin {
@@ -238,19 +254,28 @@ address i {
 }
 
 .copyright {
-  color: var(--dark-grey);
-  background-color: var(--white);
+  color: var(--white);
+  background-color: var(--dark-grey);
   font-weight: 700;
   line-height: 3rem;
   text-align: center;
 }
 
+sup {
+  font-size: 0.7rem;
+}
+
 /* ---------- Calls to Action ---------- */
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
 
 .cta {
   font: var(--cta);
   text-align: center;
-  transition: box-shadow 1s;
+  transition: box-shadow 0.7s;
   margin-top: 2rem;
   box-shadow: var(--pink-neon-strong);
 }
@@ -269,26 +294,46 @@ address i {
   box-shadow: none;
 }
 
-.cta-one {
-  box-shadow: var(--blue-neon-strong);
+.cta-secondary {
+  box-shadow: var(--white-light);
 }
 
-.cta-one:hover {
-  border: 2px solid var(--blue);
+.cta-secondary:hover {
+  border: 2px solid var(--white);
 }
 
-.cta-two {
-  box-shadow: var(--yellow-neon-strong);
+/* ---------- Modal popups ---------- */
+.modal-popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  height: 300px;
+  width: 80%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 15;
+  border: 1px solid var(--pink);
 }
 
-.cta-two:hover {
-  border: 2px solid var(--yellow);
+.modal-popup a {
+  align-self: center;
 }
 
-.cta-three {
-  box-shadow: var(--green-neon-strong);
+.modal-popup button {
+  align-self: flex-end;
+  background-color: transparent;
+  border: none;
 }
 
-.cta-three:hover {
-  border: 2px solid var(--green);
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 7000vh;
+  background-color: var(--dark-grey);
+  backdrop-filter: blur(0.15rem);
 }

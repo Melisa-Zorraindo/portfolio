@@ -22,19 +22,20 @@
   </head>
   <body>
     <header>
-      <button aria-label="toggle hamburger menu" class="burger-menu">
+      <button aria-label="toggle hamburger menu" class="menu">
         <span class="sr-only">toggle hamburger menu</span>
-        <i class="fas fa-caret-down"></i>
+        <i class="fas fa-ellipsis-h open"></i>
+        <i class="far fa-times-circle close hidden"></i>
       </button>
       <nav>
         <ul>
           <li class="hidden-large-screens">
-            <a href="/index.html">home</a>
+            <a href="/index.html" class="active">home</a>
           </li>
           <li><a href="/sections/cv.html" target="_blank">cv</a></li>
-          <li><a href="/sections/projects.html" class="active">projects</a></li>
+          <li><a href="/sections/projects.html">projects</a></li>
           <li>
-            <a href="/index.html" class="hidden-small-screens"
+            <a href="/index.html" class="active hidden-small-screens"
               ><i class="fas fa-home"></i
             ></a>
           </li>
@@ -45,12 +46,45 @@
     </header>
     <main>
       <section class="projects-section">
-        <h2>Featured projects</h2>
+        <h2 id="projects">Featured projects</h2>
         <div class="projects-container">
+          <div class="img-box-projects">
+            <img
+              src="/assets/images/ff-thumbnail.png"
+              alt="project title: Fitness and nutrition blog"
+            />
+          </div>
+          <div class="project-info">
+            <h3>FitFactory</h3>
+            <p>
+              Fitness and nutrition blog site. Developed in HTML, CSS &
+              JavaScript as part of the Front-end development curriculum at
+              Noroff. For this project I also created my own API.
+            </p>
+            <div class="buttons">
+              <a
+                class="cta cta-small cta-secondary"
+                href="https://fitfactory-noroff-project.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >live project &#xbb;</a
+              >
+              <a
+                class="cta cta-small"
+                href="https://github.com/Noroff-FEU-Assignments/project-exam-1-Melisa-Zorraindo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub code &#xbb;</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="projects-container project-even">
           <div class="img-box-projects">
             <img
               src="/assets/images/rd-thumbnail.jpg"
               alt="project title: Rainy Days jacket retailer"
+              class="project-img"
             />
           </div>
           <div class="project-info">
@@ -60,16 +94,25 @@
               CSS & JavaScript as part of the Front-end development curriculum
               at Noroff. For this project I also created my own API.
             </p>
-            <a
-              class="cta cta-small cta-one"
-              href="https://determined-chandrasekhar-92d414.netlify.app/index.html"
-              target="_blank"
-              rel="noopener noreferrer"
-              >have a look &#xbb;</a
-            >
+            <div class="buttons">
+              <a
+                class="cta cta-small cta-secondary cta-reverse"
+                href="https://rainy-days-noroff-project.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >live project &#xbb;</a
+              >
+              <a
+                class="cta cta-small cta-reverse"
+                href="https://github.com/Noroff-FEU-Assignments/cross-course-project-Melisa-Zorraindo"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub code &#xbb;</a
+              >
+            </div>
           </div>
         </div>
-        <div class="projects-container project-even">
+        <div class="projects-container">
           <div class="img-box-projects">
             <img
               src="/assets/images/csm-thumbnail.jpg"
@@ -83,36 +126,26 @@
               JavaScript as part of the Front-end development curriculum at
               Noroff.
             </p>
-            <a
-              class="cta cta-small cta-two"
-              href="https://flamboyant-euler-8de9ae.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >have a look &#xbb;</a
-            >
-          </div>
-        </div>
-        <div class="projects-container">
-          <div class="img-box-projects">
-            <img src="" alt="project title: " />
-          </div>
-          <div class="project-info">
-            <h3>New project title</h3>
-            <p>
-              New project description. Tell what you have done and stress your
-              abilities
-            </p>
-            <a
-              class="cta cta-small cta-three"
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              >have a look &#xbb;</a
-            >
+            <div class="buttons">
+              <a
+                class="cta cta-small cta-secondary"
+                href="https://csm-noroff-project.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                >live project &#xbb;</a
+              >
+              <a
+                class="cta cta-small"
+                href="https://github.com/Melisa-Zorraindo/semester-project-one"
+                target="_blank"
+                rel="noopener noreferrer"
+                >GitHub code &#xbb;</a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <section class="more-projects">
+      <!--       <section class="more-projects">
         <div class="more-projects-box">
           <h2>More projects</h2>
           <div class="more-projects-card">
@@ -215,9 +248,9 @@
             </div>
           </div>
         </div>
-      </section>
-      <div class="copyright">&copy;2022 Melisa Zorraindo</div>
+      </section> -->
+      <div class="copyright">2022 Melisa Zorraindo <sup>TM</sup></div>
     </main>
   </body>
-  <script src="/js/script.js"></script>
+  <script src="/js/script.js" type="module"></script>
 </html>

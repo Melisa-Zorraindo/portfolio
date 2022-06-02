@@ -9,7 +9,7 @@
 }
 
 @media only screen and (min-width: 650px) {
-  .burger-menu {
+  .menu {
     display: none;
   }
 
@@ -57,6 +57,10 @@
 
   /* ---------- Sections ---------- */
 
+  .projects-container {
+    margin: 15rem auto;
+  }
+
   .img-box {
     flex: 0 0 30%;
   }
@@ -78,11 +82,11 @@
     border-top: 1px solid white;
   }
 
-  .socials-box,
+  /* .socials-box,
   .contact-box {
     flex: 0 0 45%;
     margin-top: 0;
-  }
+  } */
 
   /* ---------- Calls to Action ---------- */
 
@@ -92,10 +96,14 @@
   }
 
   .cta-small {
-    margin-bottom: 2rem;
+    margin-bottom: 0.5rem;
   }
 
   .cta-two {
+    align-self: flex-start;
+  }
+
+  .buttons .cta-reverse {
     align-self: flex-start;
   }
 
