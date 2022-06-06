@@ -16,35 +16,33 @@ closeMenuButton.addEventListener("click", () => {
 });
 
 /* ---------- Modal popups ---------- */
-/* import { openModal } from "./functionality/modalpops.js";
+
+import { openModal } from "./functionality/modalpops.js";
 import { closeModal } from "./functionality/modalpops.js";
 
 const body = document.querySelector("body");
 const overlay = document.querySelector(".overlay");
 const contact = document.querySelector("#contact");
 const contactInfo = document.querySelector("#contact-info");
-const contactClose = document.querySelector("#contact-close-btn");
 const socials = document.querySelector("#socials");
 const modalSocials = document.querySelector("#modal-socials");
-const socialsClose = document.querySelectorAll("#socials-close-btn");
+const closeModalsBtns = document.querySelectorAll(".close-modal");
 
-console.log(contactClose);
+socials.addEventListener("click", () => {
+  openModal(navBar, body, overlay, modalSocials);
+  //in case user clicks on other modal when previous still on display
+  contactInfo.classList.remove("modal-popup");
+});
 
-socials.addEventListener(
-  "click",
-  openModal(navBar, body, overlay, modalSocials)
-);
-contact.addEventListener(
-  "click",
-  openModal(navBar, body, overlay, contactInfo)
-);
+contact.addEventListener("click", () => {
+  openModal(navBar, body, overlay, contactInfo);
+  //in case user clicks on other modal when previous still on display
+  modalSocials.classList.remove("modal-popup");
+});
 
-socialsClose.addEventListener(
-  "click",
-  closeModal(navBar, body, overlay, modalSocials)
-);
-
-contactClose.addEventListener(
-  "click",
-  closeModal(navBar, body, overlay, contactInfo)
-); */
+closeModalsBtns.forEach((button) => {
+  let buttonContainer = button.closest("div");
+  button.addEventListener("click", () => {
+    closeModal(navBar, body, overlay, buttonContainer);
+  });
+});
