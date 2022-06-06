@@ -2,6 +2,12 @@
   background-color: var(--dark-grey);
 }
 
+.projects-section h1 {
+  text-align: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
 .more-projects {
   background-color: var(--light-grey);
 }

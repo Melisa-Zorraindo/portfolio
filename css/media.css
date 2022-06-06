@@ -56,7 +56,8 @@
   /* ---------- Sections ---------- */
 
   .projects-container {
-    margin: 15rem auto;
+    /* margin: 15rem auto; */
+    margin-bottom: 15rem;
   }
 
   .img-box {
