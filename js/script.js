@@ -17,7 +17,7 @@ closeMenuButton.addEventListener("click", () => {
 
 /* ---------- Modal popups ---------- */
 
-import { openModal } from "./functionality/modalpops.js";
+/* import { openModal } from "./functionality/modalpops.js";
 import { closeModal } from "./functionality/modalpops.js";
 
 const body = document.querySelector("body");
@@ -62,4 +62,4 @@ closeModalsBtns.forEach((button) => {
       contact.classList.remove("active");
     }
   });
-});
+}); */

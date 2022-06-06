@@ -1,4 +1,4 @@
-export function openModal(navigation, body, overlay, modal) {
+/* export function openModal(navigation, body, overlay, modal) {
   //hide navigation on mobile when modals visible
   //remove active class from home link
   const browserWidth = window.innerWidth;
@@ -35,3 +35,4 @@ export function closeModal(navigation, body, overlay, modal) {
   overlay.classList.add("hidden");
   modal.classList.remove("modal-popup");
 }
+ */
