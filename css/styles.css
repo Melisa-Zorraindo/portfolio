@@ -15,9 +15,9 @@
   --dark-grey: #3e3e3e;
   --light-grey: #4c4c4c;
   --pink: #f0f;
-  --blue: #00dbff;
+  /*   --blue: #00dbff;
   --green: #00ff04;
-  --yellow: #f0d109;
+  --yellow: #f0d109; */
   --pink-neon-strong: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f,
     0 0 0.8em #f0f, 0 0 1em #f0f;
   --pink-neon-light: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f,
@@ -33,15 +33,21 @@
 
 /* ---------- Global styles ---------- */
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   background: var(--dark-grey);
   color: var(--white);
   font: var(--body);
+}
+
+.light {
+  --white: #3e3e3e;
+  --dark-grey: #efefef;
+  --light-grey: #e0e0e0;
+  --pink: #f0f;
+  --pink-neon-strong: 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f;
+  --pink-neon-light: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f;
+  --white-light: 0 0 0.2em #3e3e3e, 0 0 0.4em #3e3e3e, 0 0 0.6em #3e3e3e;
 }
 
 .menu,
@@ -146,6 +152,20 @@ h3 {
   font: var(--h3);
   margin-top: 0;
   margin-bottom: 0;
+}
+
+/* ---------- Settings ---------- */
+
+.settings {
+  margin: 2rem;
+  max-width: 1200px;
+  font-size: 1.5rem;
+  text-align: right;
+  color: var(--white);
+}
+
+.settings i {
+  cursor: pointer;
 }
 
 /* ---------- Sections ---------- */

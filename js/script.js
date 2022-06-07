@@ -14,3 +14,21 @@ openMenuButton.addEventListener("click", () => {
 closeMenuButton.addEventListener("click", () => {
   closeMenu(navBar, closeMenuButton, openMenuButton);
 });
+
+/* ----------- Light mode switcher ---------- */
+
+const switcherOn = document.querySelector(".fa-toggle-on");
+const switcherOff = document.querySelector(".fa-toggle-off");
+const body = document.querySelector("body");
+
+switcherOn.addEventListener("click", () => {
+  switcherOff.classList.remove("hidden");
+  switcherOn.classList.add("hidden");
+  body.classList.add("light");
+});
+
+switcherOff.addEventListener("click", () => {
+  switcherOff.classList.add("hidden");
+  switcherOn.classList.remove("hidden");
+  body.classList.remove("light");
+});
