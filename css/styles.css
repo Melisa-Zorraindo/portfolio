@@ -31,7 +31,6 @@ body {
   font: var(--body);
 }
 
-/* light mode 
 .light {
   --white: #3e3e3e;
   --dark-grey: #efefef;
@@ -40,7 +39,7 @@ body {
   --pink-neon-strong: 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f;
   --pink-neon-light: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f;
   --white-light: 0 0 0.2em #3e3e3e, 0 0 0.4em #3e3e3e, 0 0 0.6em #3e3e3e;
-} */
+}
 
 .menu,
 .close {
@@ -120,6 +119,47 @@ nav a.active::after {
   height: 0.1rem;
   background-color: var(--white);
   box-shadow: var(--pink-neon-light);
+}
+
+.switch-container {
+  max-width: 1200px;
+  margin: auto;
+  box-sizing: border-box;
+  padding-top: 4rem;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.switch-container i {
+  font-size: 0.8rem;
+}
+
+.switch-btn {
+  height: 1.5rem;
+  width: 3rem;
+  border: 2px solid var(--white);
+  border-radius: 1rem;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.state-one,
+.on {
+  height: 0.75rem;
+  width: 0.75rem;
+  /* border: 2px solid var(--white); */
+  border-radius: 50%;
+  background-color: var(--white);
+}
+
+.off {
+  opacity: 0;
 }
 
 img {
