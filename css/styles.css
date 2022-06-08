@@ -29,6 +29,7 @@ body {
   background: var(--dark-grey);
   color: var(--white);
   font: var(--body);
+  transition: all 0.5s ease-in-out;
 }
 
 .light {
@@ -71,7 +72,7 @@ nav {
   position: absolute;
   width: 100%;
   transform: translateY(-150%);
-  transition: transform 1s ease;
+  transition: all 0.5s ease-in-out;
   /* needed for small screens */
   z-index: 10;
 }
