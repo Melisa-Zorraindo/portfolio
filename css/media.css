@@ -13,10 +13,6 @@
     display: none;
   }
 
-  .hidden-large-screens {
-    display: none;
-  }
-
   .hidden-small-screens {
     display: block;
   }
