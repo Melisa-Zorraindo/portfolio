@@ -17,36 +17,25 @@ closeMenuButton.addEventListener("click", () => {
 
 /* ---------- Dark / Light themes ---------- */
 
+import { enableLightTheme } from "./functionality/themes.js";
+import { disableLightTheme } from "./functionality/themes.js";
+
 const toggleStatesBtn = document.querySelector("#switch-btn");
 const switchOff = document.querySelector(".state-one");
 const switchOn = document.querySelector(".state-two");
 
-function toggleStates() {
-  switchOn.classList.toggle("on");
-  switchOff.classList.toggle("off");
-}
-
+//save preference in local storage
 let lightTheme = localStorage.getItem("lightTheme");
 if (lightTheme === "enabled") {
-  enableLightTheme();
+  enableLightTheme(switchOn, switchOff);
 }
 
-function enableLightTheme() {
-  document.body.classList.add("light");
-  localStorage.setItem("lightTheme", "enabled");
-}
-
-function disableLightTheme() {
-  document.body.classList.remove("light");
-  localStorage.removeItem("lightTheme");
-}
-
-toggleStatesBtn.addEventListener("click", toggleStates);
+//set themes
 toggleStatesBtn.addEventListener("click", () => {
   lightTheme = localStorage.getItem("lightTheme");
   if (lightTheme !== "enabled") {
-    enableLightTheme();
+    enableLightTheme(switchOn, switchOff);
   } else {
-    disableLightTheme();
+    disableLightTheme(switchOn, switchOff);
   }
 });
