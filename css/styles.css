@@ -308,7 +308,8 @@ h3 {
 }
 
 .fa-github-square,
-.fa-linkedin {
+.fa-linkedin,
+.fa-codepen {
   font-size: 5rem;
   transition: 1s;
 }
