@@ -20,6 +20,8 @@
   --pink-neon-light: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f,
     0 0 0.8em #f0f, 0 0 1em #f0f;
   --white-light: 0 0 0.2em #fff, 0 0 0.4em #fff, 0 0 0.6em #fff;
+  --social-icons-light: 0 0 0.2em #000, 0 0 0.4em #f7f, 0 0 0.6em #f0f,
+    0 0 0.8em #f0f, 0 0 1em #f0f;
 }
 
 /* ---------- Global styles ---------- */
@@ -40,6 +42,8 @@ body {
   --pink-neon-strong: 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f;
   --pink-neon-light: 0 0 0.2em #f7f, 0 0 0.4em #f0f, 0 0 0.6em #f0f;
   --white-light: 0 0 0.2em #3e3e3e, 0 0 0.4em #3e3e3e, 0 0 0.6em #3e3e3e;
+  --social-icons-light: 0 0 0.2em #fff, 0 0 0.4em #f7f, 0 0 0.6em #f0f,
+    0 0 0.8em #f0f, 0 0 1em #f0f;
 }
 
 .menu,
@@ -315,8 +319,7 @@ h3 {
 }
 
 .font-effect-neon:hover {
-  text-shadow: 0 0 0.2em #000, 0 0 0.4em #f7f, 0 0 0.6em #f0f, 0 0 0.8em #f0f,
-    0 0 1em #f0f;
+  text-shadow: var(--social-icons-light);
 }
 
 address {
