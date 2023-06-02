@@ -12,7 +12,7 @@
 	<svelte:fragment slot="lead">
 		<div class="flex items-center">
 			<button class="sm:hidden btn btn-sm mr-4" on:click={drawerOpen}>
-				<box-icon name="menu-alt-left" />
+				<box-icon name="menu-alt-left" color="#fff" />
 			</button>
 			<strong class="text-xl uppercase">logo</strong>
 		</div>
