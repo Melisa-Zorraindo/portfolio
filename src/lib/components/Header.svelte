@@ -1,22 +1,25 @@
 <script lang="ts">
 	import { AppBar } from '@skeletonlabs/skeleton';
+	import { drawerStore } from '@skeletonlabs/skeleton';
+	import Navigation from './Navigation.svelte';
+
+	function drawerOpen(): void {
+		drawerStore.open({});
+	}
 </script>
 
 <AppBar>
-	<svelte:fragment slot="lead">logo</svelte:fragment>
-	<svelte:fragment slot="trail"
-		><nav>
-			<ul class="flex justify-end gap-2">
-				<li>
-					<a href="/">Home</a>
-				</li>
-				<li>
-					<a href="/projects">Projects</a>
-				</li>
-				<li>
-					<a href="/contact">Contact</a>
-				</li>
-			</ul>
-		</nav></svelte:fragment
-	>
+	<svelte:fragment slot="lead">
+		<div class="flex items-center">
+			<button class="sm:hidden btn btn-sm mr-4" on:click={drawerOpen}>
+				<box-icon name="menu-alt-left" />
+			</button>
+			<strong class="text-xl uppercase">logo</strong>
+		</div>
+	</svelte:fragment>
+	<svelte:fragment slot="trail">
+		<div class="hidden sm:block">
+			<Navigation />
+		</div>
+	</svelte:fragment>
 </AppBar>

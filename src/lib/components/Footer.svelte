@@ -3,7 +3,7 @@
 	const year: number = date.getFullYear();
 </script>
 
-<footer class="flex flex-wrap justify-between items-center p-2">
+<footer class="flex flex-wrap justify-between items-center p-2 bg-surface-100">
 	<div class="">
 		logo here
 		<span>Melisa Zorraindo © {year}</span>
