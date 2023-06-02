@@ -2,14 +2,18 @@
 	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
 	import '@skeletonlabs/skeleton/styles/skeleton.css';
 	import '../app.postcss';
+	import { AppShell } from '@skeletonlabs/skeleton';
 
 	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
-<Header />
+<AppShell>
+	<svelte:fragment slot="header"><Header /></svelte:fragment>
 
-<main>
-	<slot />
-</main>
+	<main>
+		<slot />
+	</main>
 
-<footer>Hello, I'm the footer.</footer>
+	<svelte:fragment slot="footer"><Footer /></svelte:fragment>
+</AppShell>
