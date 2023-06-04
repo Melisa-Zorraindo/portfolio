@@ -5,9 +5,9 @@
 	import { AppShell } from '@skeletonlabs/skeleton';
 	import { Drawer } from '@skeletonlabs/skeleton';
 
-	import Header from '$lib/components/Header.svelte';
-	import Footer from '$lib/components/Footer.svelte';
-	import Navigation from '$lib/components/Navigation.svelte';
+	import Header from '$lib/components/layout/Header.svelte';
+	import Footer from '$lib/components/layout/Footer.svelte';
+	import Navigation from '$lib/components/layout/Navigation.svelte';
 </script>
 
 <Drawer>
@@ -21,5 +21,5 @@
 		<slot />
 	</main>
 
-	<svelte:fragment slot="footer"><Footer /></svelte:fragment>
+	<svelte:fragment slot="pageFooter"><Footer /></svelte:fragment>
 </AppShell>
