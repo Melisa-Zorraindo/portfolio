@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { AppBar, drawerStore, LightSwitch } from '@skeletonlabs/skeleton';
+	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
 	import Navigation from './Navigation.svelte';
 
 	function drawerOpen(): void {
@@ -20,6 +20,5 @@
 		<div class="hidden sm:block">
 			<Navigation />
 		</div>
-		<LightSwitch />
 	</svelte:fragment>
 </AppBar>
