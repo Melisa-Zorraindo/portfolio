@@ -1,33 +1,37 @@
 <script lang="ts">
 	import PrimaryButton from './buttons/PrimaryButton.svelte';
 	import SecondaryButton from './buttons/SecondaryButton.svelte';
+
+	let tagsType = [] as { name: string; logo: string }[];
+
+	let projectType = {
+		image: 'string',
+		tags: tagsType,
+		title: 'string',
+		description: 'string',
+		type: 'string'
+	};
+
+	export let project: typeof projectType;
 </script>
 
-<div class="flex flex-col sm:flex-row m-4 border border-primary-500 rounded w-fit">
-	<div class="bg-primary-800/50 w-64 p-4">
-		<img src="/project-images/auction.png" alt="" class="pt-3 pb-1.5 mb-1" />
+<div class="flex flex-col sm:flex-row m-4 border border-primary-500 rounded">
+	<div class="bg-primary-800/50 p-4 sm:w-1/3">
+		<img src={project.image} alt="" class="pt-3 pb-1.5 mb-1" />
 		<div class="flex flex-wrap gap-1">
-			<span class="chip variant-filled-secondary px-2 py-0"
-				><i class="bx bxl-html5 text-lg pe-1" />HTML</span
-			>
-			<span class="chip variant-filled-secondary px-2 py-0"
-				><i class="bx bxl-bootstrap text-lg pe-1" />Bootstrap</span
-			>
-			<span class="chip variant-filled-secondary px-2 py-0"
-				><i class="bx bxl-javascript text-lg pe-1" />JavaScript</span
-			>
+			{#each project.tags as tag}
+				<span class="chip variant-filled-secondary px-2 py-0"
+					><i class="bx {tag.logo} text-lg pe-1" />{tag.name}</span
+				>
+			{/each}
 		</div>
 	</div>
-	<div class="card rounded-none rounded-e w-64 sm:w-80">
+	<div class="card rounded-none rounded-e sm:w-2/3">
 		<header class="card-header">
-			<h3 class="h3 font-semibold pt-2">Auction House Website</h3>
+			<h3 class="h3 font-semibold pt-2">{project.title}</h3>
 		</header>
 		<section class="px-4 py-6">
-			<p>
-				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, consequuntur natus.
-				Adipisci, atque cum non tempore officia dolore ipsam! Minus quidem, atque debitis eos
-				provident deserunt eaque enim modi doloremque.
-			</p>
+			<p>{project.description}</p>
 		</section>
 		<footer class="card-footer flex flex-wrap gap-2"><PrimaryButton /><SecondaryButton /></footer>
 	</div>
