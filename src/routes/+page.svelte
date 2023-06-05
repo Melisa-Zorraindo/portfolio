@@ -5,7 +5,10 @@
 	<div class="sm:w-2/3 flex flex-col justify-between">
 		<div>
 			<header class="card-header">
-				<h1 class="h1 mt-8">Hi, My name's Melisa</h1>
+				<h2 class="h4 bg-secondary-700/50 inline p-1 rounded">
+					&#60; Frontend developer &#47; &#62;
+				</h2>
+				<h1 class="h1 mt-2">Melisa Zorraindo</h1>
 			</header>
 			<section class="px-4 py-6">
 				<p class="text-lg lg:text-xl">
