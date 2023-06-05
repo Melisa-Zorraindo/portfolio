@@ -52,7 +52,7 @@ export function load() {
 				description:
 					'Developed as part of the Noroff curriculum as the final exam project. Worked in an agile environment to develop an lms library',
 				type: 'more',
-				image: '/project-images/lms.png',
+				image: '/project-images/socials.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'Bootstrap', logo: 'bxl-bootstrap' },
@@ -66,7 +66,7 @@ export function load() {
 				description:
 					'Fitness and nutrition blog site. Developed in HTML, CSS & JavaScript as part of the Front-end development curriculum at Noroff. Uses a headless CMS',
 				type: 'more',
-				image: '/project-images/lms.png',
+				image: '/project-images/fitfactory.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'CSS', logo: 'bxl-css3' },
@@ -81,7 +81,7 @@ export function load() {
 				description:
 					'E-commerce site for a winter jacket retailer. Developed in HTML, CSS & JavaScript as part of the Front-end development curriculum at Noroff. Uses a headless CMS',
 				type: 'more',
-				image: '/project-images/lms.png',
+				image: '/project-images/rainy-days.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'CSS', logo: 'bxl-css3' },
@@ -96,7 +96,7 @@ export function load() {
 				description:
 					'Super fun website for a children museum. Developed in HTML, CSS & JavaScript as part of the Front-end development curriculum at Noroff.',
 				type: 'more',
-				image: '/project-images/lms.png',
+				image: '/project-images/csm.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'CSS', logo: 'bxl-css3' },
@@ -109,7 +109,7 @@ export function load() {
 				title: 'Fitness Calculators',
 				description: 'Fitness Calculators',
 				type: 'small',
-				image: '/project-images/lms.png',
+				image: '/project-images/calculators.png',
 				tags: [
 					{ name: 'React', logo: 'bxl-react' },
 					{ name: 'JavaScript', logo: 'bxl-javascript' },
@@ -122,7 +122,7 @@ export function load() {
 				title: 'Event Countdown',
 				description: 'Event Countdown',
 				type: 'small',
-				image: '/project-images/lms.png',
+				image: '/project-images/event-countdown.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'CSS', logo: 'bxl-css3' },
@@ -135,7 +135,7 @@ export function load() {
 				title: 'Solar System Quiz',
 				description: 'Solar System Quiz',
 				type: 'small',
-				image: '/project-images/lms.png',
+				image: '/project-images/ss-quiz.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'CSS', logo: 'bxl-css3' },
