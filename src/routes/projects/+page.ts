@@ -106,6 +106,19 @@ export function load() {
 				demo: 'https://csm-noroff-project.netlify.app/'
 			},
 			{
+				title: 'Fitness Calculators',
+				description: 'Fitness Calculators',
+				type: 'small',
+				image: '/project-images/lms.png',
+				tags: [
+					{ name: 'React', logo: 'bxl-react' },
+					{ name: 'JavaScript', logo: 'bxl-javascript' },
+					{ name: 'Styled components', logo: 'bx-code-alt' }
+				],
+				code: 'https://github.com/Melisa-Zorraindo/fitness-calculators',
+				demo: 'https://gregarious-marshmallow-42a145.netlify.app/'
+			},
+			{
 				title: 'Event Countdown',
 				description: 'Event Countdown',
 				type: 'small',
@@ -117,6 +130,19 @@ export function load() {
 				],
 				code: 'https://github.com/Melisa-Zorraindo/event-countdown',
 				demo: ''
+			},
+			{
+				title: 'Solar System Quiz',
+				description: 'Solar System Quiz',
+				type: 'small',
+				image: '/project-images/lms.png',
+				tags: [
+					{ name: 'HTML5', logo: 'bxl-html5' },
+					{ name: 'CSS', logo: 'bxl-css3' },
+					{ name: 'JavaScript', logo: 'bxl-javascript' }
+				],
+				code: 'https://github.com/Melisa-Zorraindo/solar-system-quiz',
+				demo: 'https://ss-quiz.netlify.app/'
 			}
 		]
 	};
