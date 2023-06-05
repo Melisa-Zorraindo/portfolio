@@ -28,7 +28,7 @@
 	</div>
 	<div class="card rounded-none rounded-e sm:w-2/3">
 		<header class="card-header">
-			<h3 class="h3 font-semibold pt-2">{project.title}</h3>
+			<h2 class="h2 font-semibold pt-2">{project.title}</h2>
 		</header>
 		<section class="px-4 py-6">
 			<p>{project.description}</p>
