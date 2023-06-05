@@ -28,7 +28,7 @@
 		</div>
 	</div>
 
-	<div>
+	<div class="mb-8">
 		<h2 class="h1 mt-20 mb-10">Small projects</h2>
 		<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-10">
 			{#each projects as project}
@@ -39,6 +39,3 @@
 		</div>
 	</div>
 </div>
-
-<!-- ps-4 pt-12 pb-10 -->
-<!-- p-4 pb-10 -->

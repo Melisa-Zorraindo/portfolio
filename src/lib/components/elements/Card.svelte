@@ -18,8 +18,8 @@
 </script>
 
 <div class="flex flex-col sm:flex-row border border-primary-500 rounded">
-	<div class="bg-primary-800/50 p-4 sm:w-1/3">
-		<img src={project.image} alt="" class="pt-3 pb-1.5 mb-1" />
+	<div class="bg-primary-900/50 p-4 sm:w-1/3">
+		<img src={project.image} alt="project" class="pt-3 pb-1.5 mb-1" />
 		<div class="flex flex-wrap gap-1">
 			{#each project.tags as tag}
 				<span class="chip variant-filled-secondary px-2 py-0"
