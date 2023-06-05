@@ -8,7 +8,7 @@
 				<h1 class="h1 mt-8">Hi, My name's Melisa</h1>
 			</header>
 			<section class="px-4 py-6">
-				<p class="text-lg">
+				<p class="text-lg lg:text-xl">
 					I’m passionate about technology and languages and interested in seeing how language
 					technology could unlock new ways of making language education more interactive and
 					relevant to students. Currently taking formal education in front-end development so that I
@@ -19,8 +19,8 @@
 			</section>
 		</div>
 		<footer class="card-footer text-end">
-			<a href="./projects" class="btn p-0 bg-surface-800">
-				<i class="bx bx-book-bookmark text-3xl ps-1" />
+			<a href="./projects" class="btn p-0 bg-surface-800 text-lg lg:text-xl">
+				<i class="bx bx-book-bookmark text-3xl ps-1" aria-hidden="true" />
 				<span class="pe-2">View my projects</span>
 			</a>
 		</footer>

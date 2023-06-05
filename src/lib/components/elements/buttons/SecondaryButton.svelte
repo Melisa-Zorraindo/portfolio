@@ -15,7 +15,7 @@
 		<div
 			class="flex items-center justify-start w-full border-0 rounded-md bg-surface-800 hover:bg-primary-500 hover:text-black transition-all duration-75 ease-in"
 		>
-			<i class="bx bx-play text-3xl" />
+			<i class="bx bx-play text-3xl" aria-hidden="true" />
 			<span class="btn py-2 ps-0">Live demo</span>
 		</div>
 	</a>

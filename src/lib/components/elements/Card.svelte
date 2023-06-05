@@ -23,7 +23,7 @@
 		<div class="flex flex-wrap gap-1">
 			{#each project.tags as tag}
 				<span class="chip variant-filled-secondary px-2 py-0"
-					><i class="bx {tag.logo} text-lg pe-1" />{tag.name}</span
+					><i class="bx {tag.logo} text-lg pe-1 " aria-hidden="true" />{tag.name}</span
 				>
 			{/each}
 		</div>
