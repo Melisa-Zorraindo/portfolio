@@ -4,10 +4,10 @@
 		<address class="flex flex-col">
 			<a
 				href="mailto: melisa.zorraindo@gmail.com"
-				class="flex items-center gap-2 w-min not-italic mb-4"
+				class="flex items-center gap-2 w-min not-italic mb-4 text-lg lg:text-xl"
 				><i class="bx bx-envelope text-3xl" aria-hidden="true" />melisa.zorraindo@gmail.com</a
 			>
-			<a href="tel:004798189338" class="flex items-center gap-2 w-max not-italic"
+			<a href="tel:004798189338" class="flex items-center gap-2 w-max not-italic text-lg lg:text-xl"
 				><i class="bx bx-phone text-3xl" aria-hidden="true" />+47 981 89 338</a
 			>
 		</address>
