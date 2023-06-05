@@ -4,8 +4,7 @@
 </script>
 
 <footer class="flex flex-wrap justify-between items-center p-2 bg-surface-100 dark:bg-surface-800">
-	<div class="">
-		logo here
+	<div>
 		<span>Melisa Zorraindo © {year}</span>
 	</div>
 	<div class="flex gap-2">

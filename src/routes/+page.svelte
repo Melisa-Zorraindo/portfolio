@@ -22,7 +22,7 @@
 			</section>
 		</div>
 		<footer class="card-footer text-end">
-			<a href="./projects" class="btn p-0 bg-surface-800 text-lg lg:text-xl">
+			<a href="./projects" class="btn p-0 bg-primary-500 text-surface-900 text-lg lg:text-xl">
 				<i class="bx bx-book-bookmark text-3xl ps-1" aria-hidden="true" />
 				<span class="pe-2">View my projects</span>
 			</a>

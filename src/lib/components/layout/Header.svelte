@@ -13,7 +13,11 @@
 			<button class="sm:hidden btn btn-sm mr-4" on:click={drawerOpen}>
 				<i class="bx bx-menu-alt-left text-3xl" />
 			</button>
-			<strong class="text-xl uppercase">logo</strong>
+			<a
+				href="/"
+				class="text-xl uppercase bg-primary-500 p-3 rounded rounded-full text-surface-900 font-semibold"
+				>mz</a
+			>
 		</div>
 	</svelte:fragment>
 	<svelte:fragment slot="trail">
