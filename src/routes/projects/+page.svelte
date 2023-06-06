@@ -11,8 +11,6 @@
 	<title>MZ · Projects</title>
 </svelte:head>
 
-<h1>Hello world!</h1>
-
 <div class="p-4 flex flex-col gap-14">
 	<div>
 		<h1 class="h1 mt-20 mb-10">Featured projects</h1>
