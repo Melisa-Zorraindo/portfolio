@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>MZ · Home</title>
+</svelte:head>
+
 <div
 	class="h-full md:h-screen flex flex-col items-center justify-center sm:flex-row p-4 bg-gradient-to-br from-tertiary-500 to-secondary-800"
 >

@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>MZ · Contact</title>
+</svelte:head>
+
 <div class="p-4 flex flex-col gap-14">
 	<div>
 		<h1 class="h1 mt-20 mb-8">Get in touch</h1>
