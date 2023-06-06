@@ -11,7 +11,7 @@
 		<img src={project.image} alt="project" class="pt-3 pb-1.5 mb-1" />
 		<div class="flex flex-wrap gap-1">
 			{#each project.tags as tag}
-				<span class="chip bg-error-400 px-2 py-0"
+				<span class="badge bg-error-400 px-2 py-0 font-normal rounded"
 					><i class="bx {tag.logo} text-lg pe-1" aria-hidden="true" />{tag.name}</span
 				>
 			{/each}
