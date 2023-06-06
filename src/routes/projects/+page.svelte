@@ -1,5 +1,7 @@
 <script lang="ts">
-	import Card from '$lib/components/elements/Card.svelte';
+	import PrimaryCard from '$lib/components/elements/cards/PrimaryCard.svelte';
+	import SecondaryCard from '$lib/components/elements/cards/SecondaryCard.svelte';
+	import TertiaryCard from '$lib/components/elements/cards/TertiaryCard.svelte';
 	export let data;
 
 	let { projects } = data;
@@ -11,7 +13,7 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-10">
 			{#each projects as project}
 				{#if project.type === 'featured'}
-					<Card {project} />
+					<PrimaryCard {project} />
 				{/if}
 			{/each}
 		</div>
@@ -22,7 +24,7 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-10">
 			{#each projects as project}
 				{#if project.type === 'more'}
-					<Card {project} />
+					<SecondaryCard {project} />
 				{/if}
 			{/each}
 		</div>
@@ -33,7 +35,7 @@
 		<div class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-x-6 gap-y-10">
 			{#each projects as project}
 				{#if project.type === 'small'}
-					<Card {project} />
+					<TertiaryCard {project} />
 				{/if}
 			{/each}
 		</div>

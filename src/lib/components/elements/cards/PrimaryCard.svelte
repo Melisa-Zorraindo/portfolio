@@ -1,20 +1,9 @@
 <script lang="ts">
-	import PrimaryButton from './buttons/PrimaryButton.svelte';
-	import SecondaryButton from './buttons/SecondaryButton.svelte';
+	import type { ProjectType } from '$types/projectTypes';
+	import PrimaryButton from '../buttons/PrimaryButton.svelte';
+	import SecondaryButton from '../buttons/SecondaryButton.svelte';
 
-	let tagsType = [] as { name: string; logo: string }[];
-
-	let projectType = {
-		image: 'string',
-		tags: tagsType,
-		title: 'string',
-		description: 'string',
-		type: 'string',
-		code: 'string',
-		demo: 'string'
-	};
-
-	export let project: typeof projectType;
+	export let project: ProjectType;
 </script>
 
 <div class="flex flex-col sm:flex-row border border-primary-500 rounded">
@@ -23,7 +12,7 @@
 		<div class="flex flex-wrap gap-1">
 			{#each project.tags as tag}
 				<span class="chip variant-filled-secondary px-2 py-0"
-					><i class="bx {tag.logo} text-lg pe-1 " aria-hidden="true" />{tag.name}</span
+					><i class="bx {tag.logo} text-lg pe-1" aria-hidden="true" />{tag.name}</span
 				>
 			{/each}
 		</div>
