@@ -16,12 +16,12 @@
 			</header>
 			<section class="px-4 py-6">
 				<p class="text-lg lg:text-xl">
-					I’m passionate about technology and languages and interested in seeing how language
-					technology could unlock new ways of making language education more interactive and
-					relevant to students. Currently taking formal education in front-end development so that I
-					could develop a product which makes language education more inclusive and immersive.
-					Seeking outlets to explore these concepts in a commercial setting. Duolingo enthusiast.
-					Currently teaching myself both Polish and Japanese.
+					I absolutely love creating smooth user experiences and crafting awesome IT solutions!
+					Solving complex problems is my jam, and I'm always eager to learn and collaborate with
+					others. As a developer, I take great pride in delivering top-notch work and ensuring the
+					highest quality. During my academic journey, I've gained hands-on experience in building
+					web applications using HTML, CSS, JavaScript, and React. My focus? Making them responsive
+					and accessible to everyone. Let's create something amazing together!
 				</p>
 			</section>
 		</div>
