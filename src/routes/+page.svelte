@@ -3,7 +3,7 @@
 </svelte:head>
 
 <div
-	class="h-full md:h-screen flex flex-col items-center justify-center sm:flex-row p-4 bg-gradient-to-br from-tertiary-500 to-secondary-800"
+	class="h-full md:h-screen flex flex-col items-center justify-center sm:flex-row p-4 bg-gradient-to-br from-tertiary-400 via-secondary-500 to-secondary-800"
 >
 	<img src="/my-picture.jpg" alt="" class="rounded rounded-full w-72 me-6" />
 	<div class="sm:w-2/3 flex flex-col justify-between">
@@ -15,7 +15,7 @@
 				<h1 class="h1 mt-2">Melisa Zorraindo</h1>
 			</header>
 			<section class="px-4 py-6">
-				<p class="text-lg lg:text-xl">
+				<p class="text-lg lg:text-xl backdrop-blur-3xl">
 					I absolutely love creating smooth user experiences and crafting awesome IT solutions!
 					Solving complex problems is my jam, and I'm always eager to learn and collaborate with
 					others. As a developer, I take great pride in delivering top-notch work and ensuring the
