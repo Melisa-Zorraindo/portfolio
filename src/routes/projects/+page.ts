@@ -56,7 +56,8 @@ export function load() {
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'Bootstrap', logo: 'bxl-bootstrap' },
-					{ name: 'JavaScript', logo: 'bxl-javascript' }
+					{ name: 'JavaScript', logo: 'bxl-javascript' },
+					{ name: 'API', logo: 'bx-transfer-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/social-media-platform',
 				demo: ''
