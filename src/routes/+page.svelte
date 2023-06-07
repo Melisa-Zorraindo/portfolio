@@ -15,7 +15,7 @@
 
 {#if heroSection}
 	<div
-		class="h-full md:h-screen flex flex-col items-center justify-center sm:flex-row p-4 bg-gradient-to-br from-surface-400 via-tertiary-800 to-surface-800"
+		class="h-full flex flex-col items-center justify-center sm:flex-row p-4 bg-gradient-to-br from-surface-400 via-tertiary-800 to-surface-800"
 		transition:blur={{ amount: 10 }}
 	>
 		<img src="/my-picture.jpg" alt="" class="rounded rounded-full w-72 me-6" />

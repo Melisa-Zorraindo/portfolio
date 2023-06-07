@@ -17,7 +17,7 @@
 <AppShell slotSidebarLeft="bg-surface-500/5 w-60 sm:w-0">
 	<svelte:fragment slot="header"><Header /></svelte:fragment>
 
-	<main>
+	<main class="h-full">
 		<slot />
 	</main>
 
