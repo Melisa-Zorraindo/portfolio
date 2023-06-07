@@ -7,7 +7,11 @@ const config = {
 	],
 
 	theme: {
-		extend: {}
+		extend: {
+			screens: {
+				xxxl: '1700px'
+			}
+		}
 	},
 
 	plugins: [...require('@skeletonlabs/skeleton/tailwind/skeleton.cjs')()]
