@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import type { ProjectType } from '$types/projectTypes';
-	import { fly } from 'svelte/transition';
+	import { blur, fly } from 'svelte/transition';
 	import { sineInOut } from 'svelte/easing';
 	import PrimaryCard from '$lib/components/elements/cards/PrimaryCard.svelte';
 	import SecondaryCard from '$lib/components/elements/cards/SecondaryCard.svelte';
@@ -15,9 +15,11 @@
 		'grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-3 gap-x-6 gap-y-10';
 
 	let cardTransition: boolean = false;
+	let section: boolean = false;
 
 	onMount(() => {
 		cardTransition = true;
+		section = true;
 	});
 </script>
 
@@ -25,42 +27,48 @@
 	<title>MZ · Projects</title>
 </svelte:head>
 
-<div class="flex flex-col gap-14">
-	<section class="p-4">
-		<h1 class="h1 mt-20 mb-10">Featured projects</h1>
-		{#if cardTransition}
-			<div
-				class={cardContainerClass}
-				transition:fly={{ duration: 800, x: -300, easing: sineInOut }}
-			>
-				{#each projects as project}
-					{#if project.type === 'featured'}
-						<PrimaryCard {project} />
-					{/if}
-				{/each}
-			</div>
-		{/if}
-	</section>
+{#if section}
+	<div class="flex flex-col gap-14" out:blur={{ amount: 10 }}>
+		<section class="p-4">
+			<h1 class="h1 mt-20 mb-10">Featured projects</h1>
+			{#if cardTransition}
+				<div class={cardContainerClass} in:fly={{ duration: 800, x: -300, easing: sineInOut }}>
+					{#each projects as project}
+						{#if project.type === 'featured'}
+							<PrimaryCard {project} />
+						{/if}
+					{/each}
+				</div>
+			{/if}
+		</section>
 
-	<section class="p-4 pb-10 bg-surface-700">
-		<h2 class="h1 mt-20 mb-10">More projects</h2>
-		<div class={cardContainerClass}>
-			{#each projects as project}
-				{#if project.type === 'more'}
-					<SecondaryCard {project} />
-				{/if}
-			{/each}
-		</div>
-	</section>
+		<section class="p-4 pb-10 bg-surface-700">
+			<h2 class="h1 mt-20 mb-10">More projects</h2>
+			{#if cardTransition}
+				<div class={cardContainerClass} in:fly={{ duration: 800, x: -300, easing: sineInOut }}>
+					{#each projects as project}
+						{#if project.type === 'more'}
+							<SecondaryCard {project} />
+						{/if}
+					{/each}
+				</div>
+			{/if}
+		</section>
 
-	<section class="p-4">
-		<h2 class="h1 mt-20 mb-10">Small projects</h2>
-		<div class={cardContainerClass}>
-			{#each projects as project}
-				{#if project.type === 'small'}
-					<TertiaryCard {project} />
-				{/if}
-			{/each}
-		</div>
-	</section>
-</div>
+		<section class="p-4">
+			<h2 class="h1 mt-20 mb-10">Small projects</h2>
+			{#if cardTransition}
+				<div
+					class={cardContainerClass}
+					in:fly={{ delay: 300, duration: 800, x: -300, easing: sineInOut }}
+				>
+					{#each projects as project}
+						{#if project.type === 'small'}
+							<TertiaryCard {project} />
+						{/if}
+					{/each}
+				</div>
+			{/if}
+		</section>
+	</div>
+{/if}
