@@ -1,16 +1,18 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import type { ProjectType } from '$types/projectTypes';
 	import { fly } from 'svelte/transition';
 	import { sineInOut } from 'svelte/easing';
 	import PrimaryCard from '$lib/components/elements/cards/PrimaryCard.svelte';
 	import SecondaryCard from '$lib/components/elements/cards/SecondaryCard.svelte';
 	import TertiaryCard from '$lib/components/elements/cards/TertiaryCard.svelte';
 
-	export let data;
+	export let data: { projects: ProjectType[] };
 
 	let { projects } = data;
 
-	const cardContainerClass = 'grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-3 gap-x-6 gap-y-10';
+	const cardContainerClass: string =
+		'grid grid-cols-1 lg:grid-cols-2 xxxl:grid-cols-3 gap-x-6 gap-y-10';
 
 	let cardTransition: boolean = false;
 
