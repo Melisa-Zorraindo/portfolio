@@ -3,11 +3,11 @@
 	const year: number = date.getFullYear();
 </script>
 
-<footer class="flex flex-wrap justify-between items-center p-2 bg-surface-100 dark:bg-surface-800">
-	<div>
+<footer class="flex flex-wrap justify-between items-center bg-surface-800 gap-2">
+	<div class="p-2">
 		<span>Melisa Zorraindo © {year}</span>
 	</div>
-	<div class="flex gap-2">
+	<div class="flex gap-2 px-2">
 		<a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/" target="_blank"
 			><i class="bx bxl-linkedin-square text-4xl" /></a
 		>
