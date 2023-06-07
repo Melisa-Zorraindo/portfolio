@@ -30,7 +30,7 @@
 {#if section}
 	<div class="flex flex-col gap-14" out:blur={{ amount: 10 }}>
 		<section class="p-4">
-			<h1 class="h1 mt-20 mb-10">Featured projects</h1>
+			<h1 class="h1 mt-5 mb-4 sm:mt-10 sm:mb-7">Featured projects</h1>
 			{#if cardTransition}
 				<div class={cardContainerClass} in:fly={{ duration: 800, x: -300, easing: sineInOut }}>
 					{#each projects as project}
@@ -43,7 +43,7 @@
 		</section>
 
 		<section class="p-4 pb-10 bg-surface-700">
-			<h2 class="h1 mt-20 mb-10">More projects</h2>
+			<h2 class="h1 mt-5 mb-4 sm:mt-10 sm:mb-7">More projects</h2>
 			{#if cardTransition}
 				<div class={cardContainerClass} in:fly={{ duration: 800, x: -300, easing: sineInOut }}>
 					{#each projects as project}
@@ -56,7 +56,7 @@
 		</section>
 
 		<section class="p-4">
-			<h2 class="h1 mt-20 mb-10">Small projects</h2>
+			<h2 class="h1 mt-5 mb-4 sm:mt-0 sm:mb-7">Small projects</h2>
 			{#if cardTransition}
 				<div
 					class={cardContainerClass}
