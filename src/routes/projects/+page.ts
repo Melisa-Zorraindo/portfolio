@@ -11,6 +11,7 @@ export function load() {
 					{ name: 'SvelteKit', logo: 'bx-no-entry' },
 					{ name: 'TypeScript', logo: 'bxl-typescript' },
 					{ name: 'Skeleton UI', logo: 'bxs-skull' },
+					{ name: 'Tailwind CSS', logo: 'bxl-tailwind-css' },
 					{ name: 'Git', logo: 'bxl-git' },
 					{ name: 'AI', logo: 'bx-chip' }
 				],
@@ -25,6 +26,9 @@ export function load() {
 				image: '/project-images/e-com.png',
 				tags: [
 					{ name: 'React', logo: 'bxl-react' },
+					{ name: 'React Hook Forms', logo: 'bx-no-entry' },
+					{ name: 'Zustand', logo: 'bx-no-entry' },
+					{ name: 'Yup', logo: 'bx-no-entry' },
 					{ name: 'JavaScript', logo: 'bxl-javascript' },
 					{ name: 'Styled components', logo: 'bx-code-alt' },
 					{ name: 'API', logo: 'bx-transfer-alt' }
