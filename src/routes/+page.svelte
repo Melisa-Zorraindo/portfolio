@@ -19,7 +19,7 @@
 		transition:blur={{ amount: 10 }}
 	>
 		<img src="/my-picture.jpg" alt="" class="rounded rounded-full w-72 me-6" />
-		<div class="sm:w-2/3 flex flex-col justify-between">
+		<div class="sm:w-2/3 flex flex-col justify-between max-w-screen-lg">
 			<div>
 				<header class="card-header">
 					<h2 class="h4 bg-secondary-700/50 inline p-1 rounded">
