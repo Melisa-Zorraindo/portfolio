@@ -1,38 +1,21 @@
-# create-svelte
+# Portfolio
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## [Link to website](http://melisazor.com/)
 
-## Creating a project
+## Description
 
-If you're seeing this, you've probably already done this step. Congrats!
+Welcome to my portfolio website, a collection of my past and current projects that showcase my creativity and skills. Browse through my portfolio to discover the innovative solutions I have created and the impact they have made. From design to implementation, each project has been carefully crafted to reflect my unique approach to problem-solving. Explore my work and let's collaborate on bringing your next project to life.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## Built with
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- SvelteKit
+- TypeScript
+- Skeleton UI
+- Tailwind CSS
+- Boxicon
 
-## Developing
+## Contact
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/melisa-zorraindo-81719618b/)
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:melisa.zorraindo@gmail.com)
