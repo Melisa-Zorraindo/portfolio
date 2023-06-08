@@ -7,7 +7,7 @@
 	}
 </script>
 
-<AppBar>
+<AppBar padding="py-1 px-4">
 	<svelte:fragment slot="lead">
 		<div class="flex items-center">
 			<button class="sm:hidden btn btn-sm mr-4" on:click={drawerOpen}>

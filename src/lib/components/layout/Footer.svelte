@@ -4,10 +4,10 @@
 </script>
 
 <footer class="flex flex-wrap justify-between items-center bg-surface-800 gap-2">
-	<div class="p-2">
+	<div class="py-2 px-4">
 		<span>Melisa Zorraindo © {year}</span>
 	</div>
-	<div class="flex gap-2 px-2">
+	<div class="flex gap-2 px-4">
 		<a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/" target="_blank"
 			><i class="bx bxl-linkedin-square text-4xl" /></a
 		>
