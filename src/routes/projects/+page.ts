@@ -118,7 +118,7 @@ export function load() {
 				image: '/project-images/calculators.png',
 				tags: [
 					{ name: 'React', logo: 'bxl-react' },
-					{ name: 'JavaScript', logo: 'bxl-javascript' },
+					{ name: 'TypeScript', logo: 'bxl-typescript' },
 					{ name: 'Styled components', logo: 'bx-code-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/fitness-calculators',
