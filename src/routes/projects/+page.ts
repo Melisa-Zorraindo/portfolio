@@ -4,7 +4,7 @@ export function load() {
 			{
 				title: 'Mollify',
 				description:
-					"LMS library —a fusion of SvelteKit, TypeScript, and the limitless capabilities of AI. Developed as the pinnacle of the Noroff curriculum's final exam project, this cutting-edge solution revolutionises education by empowering both teachers and students with AI-driven assistance. Harnessing the power of collaboration and agile development practices, we seamlessly integrate Git for effortless version control.",
+					'LMS library powered by SvelteKit, TypeScript, and AI technology. Developed as a final exam project, it empowers teachers and students with AI-driven assistance. It seamlessly integrates Git for effortless version control.',
 				type: 'featured',
 				image: '/project-images/lms.png',
 				tags: [
@@ -21,7 +21,7 @@ export function load() {
 			{
 				title: 'Techtopia',
 				description:
-					'Elegant e-commerce site developed as part of the Noroff curriculum, showcasing the seamless synergy of React and JavaScript. Embracing the philosophy of minimalism, this platform offers a clean and uncluttered aesthetic, creating a delightful browsing experience. Styled components effortlessly bring forth a touch of sophistication, while the school-provided API facilitates smooth CRUD operations.',
+					'Elegant e-commerce site created as part of the Noroff curriculum It demonstrates the seamless synergy between React and JavaScript. With a minimalist design, the platform provides a clean and uncluttered browsing experience. The API provided by the school enables smooth CRUD operations.',
 				type: 'featured',
 				image: '/project-images/e-com.png',
 				tags: [
@@ -39,7 +39,7 @@ export function load() {
 			{
 				title: 'Biddable',
 				description:
-					'Exciting Auction House Website, crafted as part of the Noroff curriculum, where the power of HTML, Bootstrap, and JavaScript converge. This platform embraces a comic book inspired aesthetic, while delivering a seamless user experience. It captivates users, guiding them effortlessly through the auction process. Leveraging the API provided by the school, it empowers users to perform CRUD operations with ease. ',
+					'Auction House Website, crafted as part of the Noroff curriculum, where the power of HTML, Bootstrap, and JavaScript converge. This platform embraces a comic book inspired aesthetic and leverages the API provided by the school to empower users to perform CRUD operations with ease. ',
 				type: 'featured',
 				image: '/project-images/auction.png',
 				tags: [
@@ -54,7 +54,7 @@ export function load() {
 			{
 				title: 'Socials',
 				description:
-					'Feature-rich Social Media Platform developed as part of the Noroff curriculum, driven by HTML, Bootstrap, and JavaScript. This innovative platform is designed to enhance your online social interactions with seamless functionality. Leveraging the API provided by the school, users can effortlessly perform CRUD operations, empowering them to connect and engage with ease.',
+					'Feature-rich Social Media Platform developed as part of the Noroff curriculum, driven by HTML, Bootstrap, and JavaScript. Leveraging the API provided by the school, users can effortlessly perform CRUD operations, empowering them to connect and engage with ease.',
 				type: 'more',
 				image: '/project-images/socials.png',
 				tags: [
@@ -69,7 +69,7 @@ export function load() {
 			{
 				title: 'FitFactory',
 				description:
-					"Inspiring Fitness and Nutrition Blog Site, developed as the exam project for the first year of Noroff's Front-end Development curriculum. It's powered by HTML, CSS, and JavaScript. With a sleek and minimalist design, it prioritises the delivery of insightful content. Leveraging a headless CMS, it ensures seamless management and organization of articles and resources.",
+					"Inspiring Fitness and Nutrition Blog Site, developed as the exam project for the first year of Noroff's Front-end Development curriculum. Powered by HTML, CSS, and JavaScript. Leveraging a headless CMS, it ensures seamless management and organization of articles and resources.",
 				type: 'more',
 				image: '/project-images/fitfactory.png',
 				tags: [
@@ -84,7 +84,7 @@ export function load() {
 			{
 				title: 'Rainy Days',
 				description:
-					"E-commerce site tailored for a winter jacket retailer, developed as part of Noroff's Front-end Development curriculum. Powered by HTML, CSS, and JavaScript, it provides a smooth and engaging journey for customers seeking the perfect winter attire. Leveraging the capabilities of a headless CMS, it effortlessly manages products, ensuring a streamlined e-commerce experience.",
+					"E-commerce site tailored for a winter jacket retailer, developed as part of Noroff's Front-end Development curriculum. Powered by HTML, CSS, and JavaScript. Leveraging the capabilities of a headless CMS, it effortlessly manages products, ensuring a streamlined e-commerce experience.",
 				type: 'more',
 				image: '/project-images/rainy-days.png',
 				tags: [
@@ -99,7 +99,7 @@ export function load() {
 			{
 				title: 'Community Science Museum',
 				description:
-					"Fun website designed for young explorers aged 5-12, with a keen interest in science and adventure. The site serves as the online gateway to a captivating children's museum, developed as part of Noroff's Front-end Development curriculum. Powered by HTML, CSS, and JavaScript, and with a vibrant and engaging look and feel, it captivates young minds, igniting their curiosity and thirst for knowledge.",
+					"Fun website designed for young explorers aged 5-12, with a keen interest in science and adventure, developed as part of Noroff's Front-end Development curriculum. Powered by HTML, CSS, and JavaScript, features  vibrant and engaging look and feel.",
 				type: 'more',
 				image: '/project-images/csm.png',
 				tags: [
@@ -113,7 +113,7 @@ export function load() {
 			{
 				title: 'Fitness Calculators',
 				description:
-					'A calorie and a lifting calculator, crafted to assist dedicated gym goers in achieving their fitness goals. Developed with React and JavaScript, and powered by styled components, this innovative solution boasts a modern and sleek look, aligned with the latest design trends. Leveraging the efficiency of Zustand for state management, it ensures a smooth performance, allowing users to focus on their fitness journey.',
+					'A calorie and a lifting calculator, crafted to assist dedicated gym goers in achieving their fitness goals. Developed with React and TypeScript, and powered by styled components, this innovative solution boasts a modern and sleek look. Leveraging the efficiency of Zustand for state management, it ensures a smooth performance.',
 				type: 'small',
 				image: '/project-images/calculators.png',
 				tags: [
@@ -127,13 +127,14 @@ export function load() {
 			{
 				title: 'Event Countdown',
 				description:
-					"Single Page Application (SPA) that will revolutionise the way you anticipate and celebrate your important events. Meticulously crafted using only HTML, CSS, and JavaScript, this dynamic creation puts you in control. With its complete customisability, it empowers you to personalise and tailor the countdown to your next significant milestone. Whether it's a birthday, holiday, or any other exciting occasion, this SPA brings your anticipation to life.",
+					'Single Page Application (SPA) design to anticipate and celebrate your important events. Crafted using only HTML, CSS, and JavaScript. With its complete customisability, it empowers you to personalise and tailor the countdown to your next significant milestone.',
 				type: 'small',
 				image: '/project-images/event-countdown.png',
 				tags: [
 					{ name: 'HTML5', logo: 'bxl-html5' },
 					{ name: 'CSS', logo: 'bxl-css3' },
-					{ name: 'JavaScript', logo: 'bxl-javascript' }
+					{ name: 'JavaScript', logo: 'bxl-javascript' },
+					{ name: 'API', logo: 'bx-transfer-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/event-countdown',
 				demo: ''
@@ -141,7 +142,7 @@ export function load() {
 			{
 				title: 'Solar System Quiz',
 				description:
-					'Captivating Single Page Application (SPA) that will transport you on an exhilarating cosmic adventure. Developed exclusively using HTML, CSS, and JavaScript, this creation embodies a space-like look and feel, immersing you in the wonders of the solar system. Prepare to embark on a thrilling journey through this interactive and engaging quiz, where your knowledge about the celestial bodies will be put to the test.',
+					'Captivating Single Page Application (SPA) that will transport you on an exhilarating cosmic adventure. Developed exclusively using HTML, CSS, and JavaScript, this creation embodies a space-like look and feel, immersing you in the wonders of the solar system.',
 				type: 'small',
 				image: '/project-images/ss-quiz.png',
 				tags: [
