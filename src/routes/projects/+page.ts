@@ -122,7 +122,7 @@ export function load() {
 					{ name: 'Styled components', logo: 'bx-code-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/fitness-calculators',
-				demo: 'https://gregarious-marshmallow-42a145.netlify.app/'
+				demo: 'https://fitness-calculators.netlify.app/'
 			},
 			{
 				title: 'Event Countdown',
