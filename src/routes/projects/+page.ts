@@ -76,7 +76,7 @@ export function load() {
 					{ name: 'WordPress', logo: 'bxl-wordpress' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/project-exam-1-Melisa-Zorraindo',
-				demo: 'https://fitfactory-noroff-project.netlify.app/'
+				demo: ''
 			},
 			{
 				title: 'Rainy Days',
@@ -91,7 +91,7 @@ export function load() {
 					{ name: 'WordPress', logo: 'bxl-wordpress' }
 				],
 				code: 'https://github.com/Noroff-FEU-Assignments/cross-course-project-Melisa-Zorraindo',
-				demo: 'https://rainy-days-noroff-project.netlify.app/'
+				demo: ''
 			},
 			{
 				title: 'Community Science Museum',
