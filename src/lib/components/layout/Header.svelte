@@ -1,28 +1,60 @@
-<script lang="ts">
-	import { AppBar, drawerStore } from '@skeletonlabs/skeleton';
-	import Navigation from './Navigation.svelte';
+<nav>
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
+    </li>
+    <li class="last-li">
+      <input type="text" name="" id="" placeholder="Search...">
+    </li>
+  </ul>
+</nav>
 
-	function drawerOpen(): void {
-		drawerStore.open({});
-	}
-</script>
+<style>
+  nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 1rem auto 0;
+    width: 100%;
+  }
 
-<AppBar padding="py-1 px-4">
-	<svelte:fragment slot="lead">
-		<div class="flex items-center">
-			<button class="sm:hidden btn btn-sm mr-4" on:click={drawerOpen}>
-				<i class="bx bx-menu-alt-left text-3xl" />
-			</button>
-			<a
-				href="/"
-				class="text-xl uppercase bg-primary-500 p-3 rounded rounded-full text-surface-900 font-semibold"
-				>mz</a
-			>
-		</div>
-	</svelte:fragment>
-	<svelte:fragment slot="trail">
-		<div class="hidden sm:block">
-			<Navigation />
-		</div>
-	</svelte:fragment>
-</AppBar>
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    border-left: 1px solid black;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .last-li {
+    border-right: 1px solid black;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  input {
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    background-color: #f3f3f3;
+    color: inherit;
+    width: 100%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+</style>

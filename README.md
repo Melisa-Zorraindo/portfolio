@@ -1,21 +1,38 @@
-# Portfolio
+# sv
 
-## [Link to website](http://melisazor.com/)
+Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
 
-## Description
+## Creating a project
 
-Welcome to my portfolio website, a collection of my past and current projects that showcase my creativity and skills. Browse through my portfolio to discover the innovative solutions I have created and the impact they have made. From design to implementation, each project has been carefully crafted to reflect my unique approach to problem-solving. Explore my work and let's collaborate on bringing your next project to life.
+If you're seeing this, you've probably already done this step. Congrats!
 
-## Built with
+```bash
+# create a new project in the current directory
+npx sv create
 
-- SvelteKit
-- TypeScript
-- Skeleton UI
-- Tailwind CSS
-- Boxicon
+# create a new project in my-app
+npx sv create my-app
+```
 
-## Contact
+## Developing
 
-[![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/melisa-zorraindo-81719618b/)
+Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
-[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:melisa.zorraindo@gmail.com)
+```bash
+npm run dev
+
+# or start the server and open the app in a new browser tab
+npm run dev -- --open
+```
+
+## Building
+
+To create a production version of your app:
+
+```bash
+npm run build
+```
+
+You can preview the production build with `npm run preview`.
+
+> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

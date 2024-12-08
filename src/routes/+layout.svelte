@@ -1,25 +1,32 @@
 <script lang="ts">
-	import '@skeletonlabs/skeleton/themes/theme-skeleton.css';
-	import '@skeletonlabs/skeleton/styles/skeleton.css';
-	import '../app.postcss';
-	import { AppShell } from '@skeletonlabs/skeleton';
-	import { Drawer } from '@skeletonlabs/skeleton';
+	import { i18n } from '$lib/i18n';
+	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
 
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 	import Navigation from '$lib/components/layout/Navigation.svelte';
 </script>
 
-<Drawer>
+<ParaglideJS {i18n}>
+
 	<Navigation />
-</Drawer>
 
-<AppShell slotSidebarLeft="bg-surface-500/5 w-60 sm:w-0">
-	<svelte:fragment slot="header"><Header /></svelte:fragment>
-
-	<main class="h-full">
+	<main>
 		<slot />
 	</main>
 
-	<svelte:fragment slot="pageFooter"><Footer /></svelte:fragment>
-</AppShell>
+	<Footer />
+
+</ParaglideJS>
+
+<style>
+	main {
+		flex: 1;
+	}
+
+	@media (max-width: 1501px) {
+		main {
+		padding: 0 2rem;
+		}
+	}
+</style>

@@ -1,30 +1,60 @@
-<script lang="ts">
-	import { drawerStore } from '@skeletonlabs/skeleton';
-
-	function drawerClose(): void {
-		drawerStore.close();
-	}
-</script>
-
 <nav>
-	<ul class="flex flex-col gap-4 p-4 sm:flex-row sm:p-0">
-		<li class="hover:bg-primary-hover-token rounded-container-token p-2">
-			<a href="/" on:click={drawerClose} class="flex sm:flex-col items-center gap-2 sm:gap-0"
-				><i class="bx bx-home text-2xl" aria-hidden="true" />Home</a
-			>
-		</li>
-		<li class="hover:bg-primary-hover-token rounded-container-token p-2">
-			<a
-				href="/projects"
-				class="flex sm:flex-col items-center gap-2 sm:gap-0"
-				on:click={drawerClose}
-				><i class="bx bx-book-bookmark text-2xl" aria-hidden="true" />Projects</a
-			>
-		</li>
-		<li class="hover:bg-primary-hover-token rounded-container-token p-2">
-			<a href="/contact" class="flex sm:flex-col items-center gap-2 sm:gap-0" on:click={drawerClose}
-				><i class="bx bxs-contact text-2xl" aria-hidden="true" />Contact</a
-			>
-		</li>
-	</ul>
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/projects">Projects</a>
+    </li>
+    <li>
+      <a href="/contact">Contact</a>
+    </li>
+    <li class="last-li">
+      <input type="text" name="" id="" placeholder="Search...">
+    </li>
+  </ul>
 </nav>
+
+<style>
+  nav {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 1rem auto 0;
+    width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+  }
+
+  li {
+    border-left: 1px solid black;
+    padding: 0.5rem 1.5rem;
+  }
+
+  .last-li {
+    border-right: 1px solid black;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  input {
+    border: none;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    background-color: #f3f3f3;
+    color: inherit;
+    width: 100%;
+  }
+
+  input:focus {
+    outline: none;
+  }
+</style>
