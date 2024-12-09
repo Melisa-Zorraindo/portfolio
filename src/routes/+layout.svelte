@@ -4,12 +4,11 @@
 
 	import Header from '$lib/components/layout/Header.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
-	import Navigation from '$lib/components/layout/Navigation.svelte';
 </script>
 
 <ParaglideJS {i18n}>
 
-	<Navigation />
+	<Header />
 
 	<main>
 		<slot />
