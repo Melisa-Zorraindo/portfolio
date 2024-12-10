@@ -21,11 +21,8 @@
 <style>
 	main {
 		flex: 1;
-	}
-
-	@media (max-width: 1501px) {
-		main {
-		padding: 0 2rem;
-		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

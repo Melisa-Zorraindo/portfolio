@@ -30,3 +30,12 @@ ul {
 	list-style: none;
 	padding-left: 0;
 }
+
+/* Code for Firefox */
+::-moz-selection {
+	background: #bbb;
+}
+
+::selection {
+	background: #bbb;
+}
