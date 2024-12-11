@@ -23,6 +23,7 @@
     background-color: #f3f3f3;
     box-shadow: 1px 1px 5px 0px #c9c9c9;
     overflow: hidden;
+    z-index: 100;
   }
 
   .menu {
@@ -52,7 +53,7 @@
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 20;
+    z-index: 120;
   }
 
   .hamb-line {
