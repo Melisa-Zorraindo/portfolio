@@ -10,9 +10,13 @@
   <div>
     <img src={project.image} alt="project name"/>
   </div>
-  <p>{project.description}</p>
-  <div class="btn-container">
-    <SecondaryButton url={project.code} text="Check code" target="_blank" />
+  <p class="description">{project.description}</p>
+  <div class="tags">
+    {#each project.tags as tag}
+    <span>
+      {tag.name}
+    </span>
+    {/each}
   </div>
 </div>
 
@@ -40,17 +44,19 @@
     display: block;
   }
 
-  .btn-container {
-    display: flex;
-    justify-content: flex-end;
-    padding: 1.5rem 1.5rem .5rem;
-    gap: .5rem
-  }
-
-  p {
+  .description {
     padding: 1rem 1.5rem;
     text-align: left;
     flex: 1;
+  }
+
+  .tags {
+    padding: 1rem 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+    row-gap: .5rem;
+    color: rebeccapurple;
   }
 
   @media (width >= 410px) {

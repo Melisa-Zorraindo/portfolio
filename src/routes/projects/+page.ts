@@ -11,8 +11,7 @@ export function load() {
 					{ name: 'SvelteKit', logo: 'bx-no-entry' },
 					{ name: 'AI', logo: 'bx-chip' },
 					{ name: 'TypeScript', logo: 'bxl-typescript' },
-					{ name: 'Tailwind CSS', logo: 'bxl-tailwind-css' },
-					{ name: 'Git', logo: 'bxl-git' }
+					{ name: 'Tailwind', logo: 'bxl-tailwind-css' }
 				],
 				code: 'https://github.com/Fermain/-mollify',
 				demo: ''
@@ -26,10 +25,7 @@ export function load() {
 				tags: [
 					{ name: 'React', logo: 'bxl-react' },
 					{ name: 'API', logo: 'bx-transfer-alt' },
-					{ name: 'JavaScript', logo: 'bxl-javascript' },
-					{ name: 'React Hook Forms', logo: 'bx-no-entry' },
-					{ name: 'Zustand', logo: 'bx-no-entry' },
-					{ name: 'Yup', logo: 'bx-no-entry' }
+					{ name: 'JavaScript', logo: 'bxl-javascript' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/noroff-react-project',
 				demo: 'https://super-jalebi-36d00a.netlify.app/'
