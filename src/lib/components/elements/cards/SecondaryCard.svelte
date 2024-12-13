@@ -25,8 +25,6 @@
     flex-basis: 0;
     display: flex;
     flex-direction: column;
-    min-width: 300px;
-    max-width: 350px;
   }
 
   h3 {
@@ -54,4 +52,11 @@
     text-align: left;
     flex: 1;
   }
+
+  @media (width >= 410px) {
+    .card-container {
+      min-width: 300px;
+      max-width: 350px;
+  }
+}
 </style>

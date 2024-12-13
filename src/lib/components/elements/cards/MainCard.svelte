@@ -46,8 +46,6 @@
     display: flex;
     flex-direction: column;
     background-color: #f7f7f7;
-    min-width: 400px;
-    max-width: 450px;
   }
 
   h3 {
@@ -81,5 +79,13 @@
     padding: 1rem 1.5rem;
     text-align: left;
     flex: 1;
+  }
+
+  @media (width >= 410px) {
+    .card-container {
+    min-width: 400px;
+    max-width: 450px;
+  }
+
   }
 </style>
