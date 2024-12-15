@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { ProjectType } from "../../../../types/projectTypes";
-  import SecondaryButton from "../buttons/SecondaryButton.svelte";
 
   export let project: ProjectType;
 
@@ -15,12 +14,18 @@
   }
 </script>
 
-<div role="note" aria-live="polite" class="card-container" on:mouseenter={handleMouseEnter} on:mouseleave={handleMouseLeave}>
+<a
+  aria-live="polite"
+  class="card-container"
+  href={project.code}
+  on:mouseenter={handleMouseEnter}
+  on:mouseleave={handleMouseLeave}
+  >
   <h3>{project.title}</h3>
   <div>
     <img src={project.image} alt="project name"/>
   </div>
-  <div class="content">
+  <div class:content={isHovered}>
     <p class="description">{project.description}</p>
     <div class="tags">
       {#each project.tags as tag}
@@ -30,7 +35,7 @@
       {/each}
     </div>
   </div>
-</div>
+</a>
 
 
 <style>
@@ -41,9 +46,10 @@
     margin-bottom: 3rem;
     flex-grow: 1;
     flex-basis: 0;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto auto;
     background-color: #f7f7f7;
+    transition: all .5s ease-out;
   }
 
   h3 {
@@ -58,12 +64,6 @@
   img {
     width: 100%;
     display: block;
-  }
-
-  .content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
   }
 
   .description {

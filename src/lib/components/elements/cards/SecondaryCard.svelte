@@ -1,6 +1,5 @@
 <script lang="ts">
   import type { ProjectType } from "../../../../types/projectTypes";
-  import SecondaryButton from "../buttons/SecondaryButton.svelte";
 
   export let project: ProjectType;
 </script>
