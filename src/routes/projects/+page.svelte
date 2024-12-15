@@ -23,21 +23,21 @@
     <div class="content">
       {#each projects as project}
         {#if project.type === 'more'}
-          <SecondaryCard {project} />
+          <MainCard {project} />
         {/if}
-    {/each}
+      {/each}
     </div>
   </section>
   <section class="quick">
     <h2 class="title">Quick builds</h2>
     <div class="content">
       {#each projects as project}
-      {#if project.type === 'small'}
-        <SecondaryCard {project} />
-      {/if}
-    {/each}
+        {#if project.type === 'small'}
+          <MainCard {project} />
+        {/if}
+      {/each}
     </div>
-    </section>
+  </section>
   <section class="about">
     <div>
       <h2 class="title">Tech I use</h2>

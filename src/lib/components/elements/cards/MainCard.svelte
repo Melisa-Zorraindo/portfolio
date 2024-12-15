@@ -2,37 +2,31 @@
   import type { ProjectType } from "../../../../types/projectTypes";
 
   export let project: ProjectType;
-
-  let isHovered:boolean = false;
-
-  const handleMouseEnter = () => {
-    isHovered = true;
-  }
-
-  const handleMouseLeave = () => {
-    isHovered = false;
-  }
 </script>
 
 <a
   aria-live="polite"
   class="card-container"
   href={project.code}
-  on:mouseenter={handleMouseEnter}
-  on:mouseleave={handleMouseLeave}
   >
-  <h3>{project.title}</h3>
   <div>
     <img src={project.image} alt="project name"/>
   </div>
-  <div class:content={isHovered}>
-    <p class="description">{project.description}</p>
+  <div class="content">
+    <h3>{project.title}</h3>
     <div class="tags">
       {#each project.tags as tag}
       <span>
         {tag.name}
       </span>
       {/each}
+    </div>
+  </div>
+  <div class="overlay">
+    <div>
+      <p>{project.description}</p>
+      <span>Code</span>
+      <span class="arrow">&xrarr;</span>
     </div>
   </div>
 </a>
@@ -49,43 +43,75 @@
     display: grid;
     grid-template-rows: auto auto;
     background-color: #f7f7f7;
-    transition: all .5s ease-out;
+    overflow: hidden;
   }
 
-  h3 {
+  .card-container:hover .overlay{
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  .overlay{
     position: absolute;
-    margin: 0 -1px;
-    padding: .75rem 1.5rem;
-    border: 1px solid #ebebeb;
-    top: -1.5rem;
-    background-color: #f7f7f7;
+    background-color: rgba(53, 53, 53, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(1.3);
+    opacity: 0;
+    transition: all .5s ease-in-out;
+  }
+
+  .overlay div {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-15%, -50%);
+    color: #fff;
+  }
+
+  .overlay p {
+    margin-bottom: 2rem;
+  }
+
+  .overlay .arrow {
+    padding: .5rem;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+  }
+
+  .card-container:hover img{
+    transform: scale(2.5);
+  }
+
+  .content {
+    padding: 1rem 1.5rem;
   }
 
   img {
     width: 100%;
     display: block;
-  }
-
-  .description {
-    padding: 1rem 1.5rem;
-    text-align: left;
-    flex: 1;
+    transition: all .5s ease-in-out;
   }
 
   .tags {
-    padding: 1rem 1.5rem;
+    padding-top: .5rem;
     display: flex;
     flex-wrap: wrap;
     column-gap: 1rem;
     row-gap: .5rem;
-    color: rebeccapurple;
+  }
+
+  .tags span {
+    padding: .1rem .75rem;
+    border: 1px solid rgb(102, 51, 153, .4);
+    font-size: .8rem;
   }
 
   @media (width >= 500px) {
     .card-container {
-      min-width: 400px;
-      max-width: 450px;
+      min-width: 250px;
+      max-width: 320px;
     }
-
   }
 </style>
