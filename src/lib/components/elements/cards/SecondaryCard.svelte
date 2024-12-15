@@ -59,10 +59,10 @@
     color: rebeccapurple;
   }
 
-  @media (width >= 410px) {
+  @media (width >= 500px) {
     .card-container {
       min-width: 300px;
       max-width: 350px;
-  }
+    }
 }
 </style>

@@ -1,119 +1,149 @@
-<header class="header">
-  <input class="side-menu" type="checkbox" id="side-menu"/>
-  <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
-  <nav class="nav">
-      <ul class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/projects">Projects</a> </li>
-          <li><a href="/contact">Contact</a></li>
-          <li class="last-li">
-            <input type="text" name="" id="" placeholder="Search...">
-          </li>
-      </ul>
+<script lang="ts">
+  import { onMount } from 'svelte';
+  import { beforeNavigate } from '$app/navigation';
+
+  let isOpen = false;
+  let bodyExists = false;
+
+  onMount(() => {
+    bodyExists = !!document.body;
+  });
+
+  $: if (bodyExists) {
+    if (isOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+  }
+
+  const toggleMenu = () => {
+    isOpen = !isOpen;
+  }
+
+  beforeNavigate(() => (isOpen = false));
+</script>
+
+<header>
+  <button aria-label="toggle menu" on:click={ toggleMenu } class:open={isOpen}>
+    <span class="burger line-top"></span>
+    <span class="burger line-centre"></span>
+    <span class="burger line-bottom"></span>
+  </button>
+  <nav class:menu-open={isOpen} id="nav">
+    <ul class="menu">
+      <li><a href="/">Home</a></li>
+      <li><a href="/projects">Projects</a> </li>
+      <li><a href="/contact">Contact</a></li>
+      <li class="last-li">
+        <input type="text" name="" id="" placeholder="Search...">
+      </li>
+    </ul>
   </nav>
 </header>
 
 <style>
-  .nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: #f3f3f3;
-    box-shadow: 1px 1px 5px 0px #c9c9c9;
+  :global(body.no-scroll) {
     overflow: hidden;
-    z-index: 100;
   }
 
-  .menu {
+  header {
+    background-color: black;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 6rem;
-    gap: 5rem;
-  }
-
-  .menu a{
-    display: block;
-  }
-
-  .menu .last-li {
-    display: none;
-  }
-
-  .nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
-  }
-
-  .hamb{
-    cursor: pointer;
-    padding: 40px 20px;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 120;
-  }
-
-  .hamb-line {
-    background: black;
-    display: block;
-    height: 2px;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 .5rem 1rem;
     position: relative;
-    width: 24px;
   }
 
-  .hamb-line::before,
-  .hamb-line::after{
-    background: black;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
+  button {
+    background-color: transparent;
+    border: none;
+    z-index: 2;
+  }
+
+  nav {
+    background-color: black;
+    color: white;
     width: 100%;
+    text-align: center;
+    position: absolute;
+    top: -600%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    transition: all .5s ease-out;
   }
 
-  .hamb-line::before{
-    top: 5px;
+  .burger {
+    background-color: white;
+    display: block;
+    width: 2rem;
+    height: 2px;
+    border-radius: 1rem;
   }
 
-  .hamb-line::after{
-    top: -5px;
+  .line-top {
+    margin-top: 2rem;
   }
 
-  .side-menu {
+  .line-centre {
+    margin: .3rem 0;
+  }
+
+  .menu li {
+    padding: 2rem 0;
+  }
+
+  .menu .last-li{
     display: none;
   }
 
-  .side-menu:checked ~ nav{
-    max-height: 100%;
+  .menu a {
+    display: block;
   }
 
-  .side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
+  button .line-top,
+  button .line-bottom,
+  button .line-centre {
+    transition: all .2s ease-out;
   }
 
-  .side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
+  button.open .line-top {
+    transform: rotate(45deg) translate(5px, 5px);
   }
 
-  .side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
+  button.open .line-centre {
+    opacity: 0;
+  }
+
+  button.open .line-bottom {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  nav.menu-open {
+    transition: all .5s ease-out;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
   }
 
   @media (min-width: 800px) {
-    .nav{
-      box-shadow: none;
+    header {
+      padding: 0;
+    }
+
+    nav{
       margin-top: 1rem;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
-      position: relative;
-      top: 0;
-      max-height: none;
+      background-color: transparent;
+      color: black;
+    }
+
+    .burger {
+      display: none;
     }
 
     .menu {
@@ -121,8 +151,6 @@
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      padding: 0;
-      gap: 0;
     }
 
     .menu li {
@@ -135,16 +163,11 @@
       border-right: 1px solid black;
     }
 
-    .hamb{
-      display: none;
-    }
-
     input {
       border: none;
       font-family: 'Source Code Pro', monospace;
       font-size: 1rem;
       background-color: #f3f3f3;
-      color: inherit;
       width: 100%;
     }
 
@@ -153,46 +176,3 @@
     }
   }
 </style>
-
-<!-- <style>
-  nav {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    margin: 1rem auto 0;
-    width: 100%;
-  }
-
-  ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding-left: 0;
-  }
-
-  li {
-    border-left: 1px solid black;
-    padding: 0.5rem 1.5rem;
-  }
-
-  .last-li {
-    border-right: 1px solid black;
-  }
-
-  a {
-    color: inherit;
-  }
-
-  input {
-    border: none;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 1rem;
-    background-color: #f3f3f3;
-    color: inherit;
-    width: 100%;
-  }
-
-  input:focus {
-    outline: none;
-  }
-</style> -->

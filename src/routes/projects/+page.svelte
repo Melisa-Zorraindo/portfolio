@@ -5,8 +5,6 @@
 
   export let data: { projects: ProjectType[] }
   const { projects } = data
-
-  const tech = ['SvelteKit', 'React', 'TypeScript', 'JavaScript', 'Tailwind', 'Bootstrap', 'API']
 </script>
 
 <div class="wrapper">
@@ -79,11 +77,12 @@
   }
 
   @media (500px <= width <= 1299px) {
+
     .content {
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
-  }
+    }
   }
 
   @media (width >= 1300px) {
