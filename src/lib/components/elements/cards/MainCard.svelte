@@ -80,12 +80,14 @@
     border-radius: 50%;
   }
 
-  .card-container:hover img{
-    transform: scale(2.5);
+  .card-container:hover img,
+  .card-container:hover .content {
+    opacity: 0;
   }
 
   .content {
     padding: 1rem 1.5rem;
+    transition: all .5s ease-in-out;
   }
 
   img {
@@ -98,7 +100,7 @@
     padding-top: .5rem;
     display: flex;
     flex-wrap: wrap;
-    column-gap: 1rem;
+    column-gap: .5rem;
     row-gap: .5rem;
   }
 

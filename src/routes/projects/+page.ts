@@ -14,7 +14,7 @@ export function load() {
 					{ name: 'Tailwind', logo: 'bxl-tailwind-css' }
 				],
 				code: 'https://github.com/Fermain/-mollify',
-				demo: ''
+				website: ''
 			},
 			{
 				title: 'TECHTOPIA',
@@ -28,7 +28,7 @@ export function load() {
 					{ name: 'JavaScript', logo: 'bxl-javascript' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/noroff-react-project',
-				demo: 'https://super-jalebi-36d00a.netlify.app/'
+				website: 'https://super-jalebi-36d00a.netlify.app/'
 			},
 			{
 				title: 'BIDDABLE',
@@ -43,7 +43,7 @@ export function load() {
 					{ name: 'API', logo: 'bx-transfer-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/auction-house-website',
-				demo: 'https://fluffy-shortbread-738c45.netlify.app/'
+				website: 'https://fluffy-shortbread-738c45.netlify.app/'
 			},
 			{
 				title: 'SOCIALS',
@@ -57,7 +57,7 @@ export function load() {
 					{ name: 'JavaScript', logo: 'bxl-javascript' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/social-media-platform',
-				demo: ''
+				website: ''
 			},
 			{
 				title: 'FIT-FACTORY',
@@ -72,7 +72,7 @@ export function load() {
 					{ name: 'WordPress', logo: 'bxl-wordpress' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/project-exam-1-Melisa-Zorraindo',
-				demo: ''
+				website: ''
 			},
 			{
 				title: 'RAINY DAYS',
@@ -87,7 +87,7 @@ export function load() {
 					{ name: 'WordPress', logo: 'bxl-wordpress' }
 				],
 				code: 'https://github.com/Noroff-FEU-Assignments/cross-course-project-Melisa-Zorraindo',
-				demo: ''
+				website: ''
 			},
 			{
 				title: 'SCIENCE MUSEUM',
@@ -100,7 +100,7 @@ export function load() {
 					{ name: 'JavaScript', logo: 'bxl-javascript' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/semester-project-one',
-				demo: 'https://csm-noroff-project.netlify.app/'
+				website: 'https://csm-noroff-project.netlify.app/'
 			},
 			{
 				title: 'FITNESS CALCULATORS',
@@ -114,7 +114,7 @@ export function load() {
 					{ name: 'Styled components', logo: 'bx-code-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/fitness-calculators',
-				demo: 'https://fitness-calculators.netlify.app/'
+				website: 'https://fitness-calculators.netlify.app/'
 			},
 			{
 				title: 'EVENT COUNTDOWN',
@@ -129,7 +129,7 @@ export function load() {
 					{ name: 'API', logo: 'bx-transfer-alt' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/event-countdown',
-				demo: ''
+				website: ''
 			},
 			{
 				title: 'SOLAR SYSTEM QUIZ',
@@ -143,7 +143,38 @@ export function load() {
 					{ name: 'JavaScript', logo: 'bxl-javascript' }
 				],
 				code: 'https://github.com/Melisa-Zorraindo/solar-system-quiz',
-				demo: 'https://ss-quiz.netlify.app/'
+				website: 'https://ss-quiz.netlify.app/'
+			},
+			{
+				title: 'Junior Software Developer',
+				company: 'eLoaded',
+				location: 'Innsbruck - Austria',
+				startDate: 'January 2024',
+				endDate: 'Present',
+				description:
+					'Contribute to the development, optimisation, and maintenance of microservices and APIs for an electric vehicle charging platform. Responsibilities include implementing features, enhancing data handling, ensuring test coverage, resolving bugs, and refining system integrations to support seamless operations and UX.',
+				type: 'job',
+				tags: [
+					{ name: 'JavaScript', logo: 'bxl-javascript' },
+					{ name: 'Node.js', logo: '' },
+					{ name: 'Java', logo: '' }
+				],
+				website: 'https://www.eloaded.eu/'
+			},
+			{
+				title: 'Research project - Contributor',
+				company: 'Network Perception',
+				location: 'Chicago - USA',
+				startDate: 'July 2023',
+				endDate: 'August 2023',
+				description:
+					'Network Perception developed a research plan to determine the feasibility of using a React / SVG combination to display a 2D network topology map. I followed the method in their research plan, which included working toward defined deliverables and checking in weekly with their software engineering team for mentoring and support. I fulfilled my commitments and my experience provided important insights to their team.',
+				type: 'job',
+				tags: [
+					{ name: 'React', logo: 'bxl-react' },
+					{ name: 'JavaScript', logo: 'bxl-javascript' }
+				],
+				website: 'https://www.network-perception.com/'
 			}
 		]
 	};

@@ -1,6 +1,5 @@
 <script lang="ts">
   import MainCard from "$lib/components/elements/cards/MainCard.svelte";
-  import SecondaryCard from "$lib/components/elements/cards/SecondaryCard.svelte";
   import type { ProjectType } from "../../types/projectTypes";
 
   export let data: { projects: ProjectType[] }
@@ -9,7 +8,7 @@
 
 <div class="wrapper">
   <section class="featured">
-    <h1 class="title">Featured projects</h1>
+    <h1>Featured projects</h1>
     <div class="content">
       {#each  projects as project}
         {#if project.type === 'featured'}
@@ -19,7 +18,7 @@
     </div>
   </section>
   <section class="other">
-    <h2 class="title">Other creations</h2>
+    <h2>Other creations</h2>
     <div class="content">
       {#each projects as project}
         {#if project.type === 'more'}
@@ -29,7 +28,7 @@
     </div>
   </section>
   <section class="quick">
-    <h2 class="title">Quick builds</h2>
+    <h2>Quick builds</h2>
     <div class="content">
       {#each projects as project}
         {#if project.type === 'small'}
@@ -40,40 +39,87 @@
   </section>
   <section class="about">
     <div>
-      <h2 class="title">Tech I use</h2>
-      <p>A paragraph or a list of technologies used in the projects I have contributed to.</p>
+      <h2>Where I worked</h2>
+      <ul class="jobs">
+        {#each projects as project}
+          {#if project.type === 'job'}
+          <li>
+            <a href={project.website}>
+              <h3>{project.company}
+                <!-- insert icon here -->
+                <span>&#x1F517;</span>
+              </h3>
+            </a>
+            <h4>{project.title}</h4>
+            <span>{project.startDate} - </span>
+            <span>{project.endDate}</span>
+            <p class="job-description">{project.description}</p>
+            <div class="tags">
+              {#each project.tags as tag}
+              <span>
+                {tag.name}
+              </span>
+              {/each}
+            </div>
+          </li>
+          {/if}
+        {/each}
+      </ul>
     </div>
     <div>
-      <h2 class="title">Resume</h2>
-      <ul>
-        <li>
-          <h3>eLoaded</h3>
-          <p>Quick overview of what I've done</p>
-          <span>Tech that I've used here</span>
-          <a href="/">Link to their website</a>
-        </li>
-        <li>
-          <h3>Network Perception</h3>
-          <p>Quick overview of what I've done</p>
-          <span>Tech that I've used here</span>
-          <a href="/">Link to their website</a>
-        </li>
-      </ul>
+      <h2>Tech I use</h2>
+      <p>A paragraph or a list of technologies used in the projects I have contributed to.</p>
     </div>
   </section>
 </div>
 
 <style>
-  .featured h1 {
-    margin-bottom: 3rem;
+  h1 {
+    margin: 0.65rem 0;
   }
 
-  h2, h3 {
-    margin-bottom: 2rem;
+  h2 {
+    margin: 0.8rem 0;
+  }
+
+  h3 {
+    margin: 1rem 0 0;
   }
 
   section {
     padding: 0 2rem;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .jobs li {
+    margin: 1rem 0 2rem;
+  }
+
+  .jobs li:last-child {
+    margin-bottom: 0;
+  }
+
+  .job-description {
+    margin: .75rem 0 .5rem;
+  }
+
+  .tags {
+    padding-top: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: .5rem;
+    row-gap: .5rem;
+  }
+
+  .tags span {
+    padding: .1rem .75rem;
+    border: 1px solid rgb(102, 51, 153, .4);
+    font-size: .8rem;
   }
 
   @media (500px <= width <= 1299px) {
