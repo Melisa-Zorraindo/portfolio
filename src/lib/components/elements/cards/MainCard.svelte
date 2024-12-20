@@ -1,5 +1,6 @@
 <script lang="ts">
   import type { ProjectType } from "../../../../types/projectTypes";
+  import Tag from "../Tag.svelte";
 
   export let project: ProjectType;
 </script>
@@ -16,9 +17,7 @@
     <h3>{project.title}</h3>
     <div class="tags">
       {#each project.tags as tag}
-      <span>
-        {tag.name}
-      </span>
+      <Tag name={tag.name} />
       {/each}
     </div>
   </div>
@@ -101,11 +100,5 @@
     flex-wrap: wrap;
     column-gap: .5rem;
     row-gap: .5rem;
-  }
-
-  .tags span {
-    padding: .08rem .5rem;
-    background-color: rgb(102, 51, 153, .1);
-    font-size: .8rem;
   }
 </style>

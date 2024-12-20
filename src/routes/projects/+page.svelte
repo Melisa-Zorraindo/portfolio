@@ -1,5 +1,6 @@
 <script lang="ts">
   import MainCard from "$lib/components/elements/cards/MainCard.svelte";
+  import Tag from "$lib/components/elements/Tag.svelte";
   import type { ProjectType } from "../../types/projectTypes";
 
   export let data: { projects: ProjectType[] }
@@ -59,9 +60,7 @@
             <p class="job-description">{project.description}</p>
             <div class="tags">
               {#each project.tags as tag}
-              <span>
-                {tag.name}
-              </span>
+              <Tag name={tag.name} />
               {/each}
             </div>
           </li>
@@ -124,12 +123,6 @@
     flex-wrap: wrap;
     column-gap: .5rem;
     row-gap: .5rem;
-  }
-
-  .tags span {
-    padding: .1rem .75rem;
-    border: 1px solid rgb(102, 51, 153, .4);
-    font-size: .8rem;
   }
 
   @media (550px <= width <= 1032px) {
