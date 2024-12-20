@@ -109,11 +109,4 @@
     border: 1px solid rgb(102, 51, 153, .4);
     font-size: .8rem;
   }
-
-  @media (width >= 500px) {
-    .card-container {
-      min-width: 250px;
-      max-width: 320px;
-    }
-  }
 </style>

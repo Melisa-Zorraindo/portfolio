@@ -122,27 +122,29 @@
     font-size: .8rem;
   }
 
-  @media (500px <= width <= 1299px) {
+  @media (550px <= width <= 1032px) {
 
     .content {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
   }
 
-  @media (width >= 1300px) {
+  @media (width >= 1032px) {
+    .content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+    }
+  }
+
+  @media (width >= 1290px) {
    .wrapper {
       flex: 1;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(3, 1fr);
-  }
-
-  .content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
   }
 
    .featured {
