@@ -7,39 +7,42 @@
 </script>
 
 <div class="wrapper">
-  <section class="featured">
-    <h1>Featured projects</h1>
-    <div class="content">
-      {#each  projects as project}
+  <div class="column-one">
+    <section class="featured">
+      <h1>Featured projects</h1>
+      <div class="content">
+        {#each  projects as project}
         {#if project.type === 'featured'}
-          <MainCard {project}/>
+        <MainCard {project}/>
         {/if}
-      {/each}
-    </div>
-  </section>
-  <section class="other">
-    <h2>Other creations</h2>
-    <div class="content">
-      {#each projects as project}
+        {/each}
+      </div>
+    </section>
+    <section class="other">
+      <h2>Other creations</h2>
+      <div class="content">
+        {#each projects as project}
         {#if project.type === 'more'}
-          <MainCard {project} />
+        <MainCard {project} />
         {/if}
-      {/each}
-    </div>
-  </section>
-  <section class="quick">
-    <h2>Quick builds</h2>
-    <div class="content">
-      {#each projects as project}
+        {/each}
+      </div>
+    </section>
+    <section class="quick">
+      <h2>Quick builds</h2>
+      <div class="content">
+        {#each projects as project}
         {#if project.type === 'small'}
-          <MainCard {project} />
+        <MainCard {project} />
         {/if}
-      {/each}
-    </div>
-  </section>
-  <section class="about">
-    <div>
-      <h2>Where I worked</h2>
+        {/each}
+      </div>
+    </section>
+  </div>
+  <div class="column-two">
+    <section class="about">
+      <div>
+        <h2>Where I worked</h2>
       <ul class="jobs">
         {#each projects as project}
           {#if project.type === 'job'}
@@ -63,14 +66,15 @@
             </div>
           </li>
           {/if}
-        {/each}
-      </ul>
-    </div>
-    <div>
-      <h2>Tech I use</h2>
-      <p>A paragraph or a list of technologies used in the projects I have contributed to.</p>
-    </div>
-  </section>
+          {/each}
+        </ul>
+      </div>
+      <div>
+        <h2>Tech I use</h2>
+        <p>A paragraph or a list of technologies used in the projects I have contributed to.</p>
+      </div>
+    </section>
+  </div>
 </div>
 
 <style>
@@ -88,6 +92,12 @@
 
   section {
     padding: 0 2rem;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .about {
@@ -123,17 +133,20 @@
   }
 
   @media (550px <= width <= 1032px) {
-
     .content {
-      display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
   }
 
+  @media (width >= 800px) {
+    .wrapper {
+      margin-top: 4rem;
+    }
+  }
+
   @media (width >= 1032px) {
     .content {
-      display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
     }
@@ -141,28 +154,22 @@
 
   @media (width >= 1290px) {
    .wrapper {
-      flex: 1;
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(3, 1fr);
-  }
+      grid-template-rows: 1fr;
+    }
 
-   .featured {
-    grid-area: 1 / 1 / 2 / 4;
-  }
+    .column-one {
+      grid-area: 1 / 1 / 2 / 4;
+    }
 
-  .other {
-    grid-area: 2 / 1 / 3 / 4;
-  }
+    .column-two {
+      grid-area: 1 / 4 / 2 / 5;
+    }
 
-  .quick {
-    grid-area: 3 / 1 / 4 / 4;
-  }
-
-  .about {
-    grid-area: 1 / 4 / 4 / 5;
-    border-left: 1px solid black;
-  }
+    .about {
+      border-left: 1px solid black;
+    }
 	}
 
 </style>

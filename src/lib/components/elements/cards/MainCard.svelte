@@ -37,7 +37,6 @@
     position: relative;
     border: 1px solid #ebebeb;
     padding-bottom: .5rem;
-    margin-bottom: 3rem;
     flex-grow: 1;
     flex-basis: 0;
     display: grid;
@@ -105,8 +104,8 @@
   }
 
   .tags span {
-    padding: .1rem .75rem;
-    border: 1px solid rgb(102, 51, 153, .4);
+    padding: .08rem .5rem;
+    background-color: rgb(102, 51, 153, .1);
     font-size: .8rem;
   }
 </style>
