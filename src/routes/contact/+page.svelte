@@ -1,7 +1,3 @@
-<script lang="ts">
-  import PrimaryButton from "$lib/components/elements/buttons/PrimaryButton.svelte";
-</script>
-
 <div class="container">
   <h1>Get in touch</h1>
   <a href="mailto:melisa.zorraindo@gmail.com">Drop me a line</a>
