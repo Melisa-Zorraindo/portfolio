@@ -34,7 +34,7 @@
 <style>
   .card-container {
     position: relative;
-    border: 1px solid #ebebeb;
+    border: 1px solid rgb(102, 51, 153, .1);
     padding-bottom: .5rem;
     flex-grow: 1;
     flex-basis: 0;
