@@ -34,10 +34,7 @@
     <ul class="menu">
       <li><a href="/">Home</a></li>
       <li><a href="/projects">Projects</a> </li>
-      <li><a href="/contact">Contact</a></li>
-      <li class="last-li">
-        <input type="text" name="" id="" placeholder="Search...">
-      </li>
+      <li class="last-li"><a href="/contact">Contact</a></li>
     </ul>
   </nav>
 </header>
@@ -96,9 +93,9 @@
     padding: 2rem 0;
   }
 
-  .menu .last-li{
+  /* .menu .last-li{
     display: none;
-  }
+  } */
 
   .menu a {
     display: block;
@@ -129,7 +126,7 @@
     height: 100vh;
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 700px) {
     header {
       padding: 0;
     }
@@ -161,18 +158,6 @@
     .menu .last-li {
       display: block;
       border-right: 1px solid black;
-    }
-
-    input {
-      border: none;
-      font-family: 'Source Code Pro', monospace;
-      font-size: 1rem;
-      background-color: #f3f3f3;
-      width: 100%;
-    }
-
-    input:focus {
-      outline: none;
     }
   }
 </style>

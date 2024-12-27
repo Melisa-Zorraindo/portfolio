@@ -7,8 +7,15 @@
   const { projects } = data
 </script>
 
+<svelte:head>
+	<title>Melisa's portfolio :: Projects</title>
+</svelte:head>
+
 <div class="wrapper">
   <div class="column-one">
+    <div class="search-container">
+      <input class="search" type="text" name="" id="" placeholder="Search...">
+    </div>
     <section class="featured">
       <h1>Featured projects</h1>
       <div class="content">
@@ -93,16 +100,38 @@
     padding: 0 2rem;
   }
 
+  .search-container {
+    color: #000;
+    padding: 0 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .search {
+    border: none;
+    border-bottom: 1px solid black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 1rem;
+    background-color: #f3f3f3;
+    width: 100%;
+    color: inherit;
+  }
+
+  .search:focus {
+    outline: none;
+  }
+
   .content {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    margin-bottom: 3rem;
   }
 
   .about {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    margin-bottom: 3rem;
   }
 
   .jobs li {
@@ -132,10 +161,14 @@
     }
   }
 
-  @media (width >= 800px) {
+  @media (width >= 700px) {
     .wrapper {
       margin-top: 4rem;
     }
+
+  .search-container {
+    width: 680px;
+  }
   }
 
   @media (width >= 1032px) {
@@ -162,6 +195,10 @@
 
     .about {
       border-left: 1px solid black;
+    }
+
+    .about h2 {
+      margin: 0;
     }
 	}
 

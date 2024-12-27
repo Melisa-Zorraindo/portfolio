@@ -157,7 +157,8 @@ export function load() {
 				tags: [
 					{ name: 'JavaScript', logo: 'bxl-javascript' },
 					{ name: 'Node.js', logo: '' },
-					{ name: 'Java', logo: '' }
+					{ name: 'Java', logo: '' },
+					{ name: 'Spring Boot', logo: '' }
 				],
 				website: 'https://www.eloaded.eu/'
 			},
