@@ -56,10 +56,7 @@
           {#if project.type === 'job'}
           <li>
             <a href={project.website}>
-              <h3>{project.company}
-                <!-- insert icon here -->
-                <span>&#x1F517;</span>
-              </h3>
+              <h3>{project.company}</h3>
             </a>
             <h4>{project.title}</h4>
             <span>{project.startDate} - </span>
@@ -84,16 +81,8 @@
 </div>
 
 <style>
-  h1 {
-    margin: 0.65rem 0;
-  }
-
-  h2 {
-    margin: 0.8rem 0;
-  }
-
-  h3 {
-    margin: 1rem 0 0;
+  h1, h2, h3 {
+    margin: 1rem 0;
   }
 
   section {
@@ -101,17 +90,15 @@
   }
 
   .search-container {
-    color: #000;
     padding: 0 2rem;
     margin-bottom: 3rem;
   }
 
   .search {
     border: none;
-    border-bottom: 1px solid black;
-    font-family: 'Source Code Pro', monospace;
+    border-bottom: 1px solid rgba(53, 53, 53, .1);
+    font-family: 'Inter', sans-serif;
     font-size: 1rem;
-    background-color: #f3f3f3;
     width: 100%;
     color: inherit;
   }
@@ -142,8 +129,21 @@
     margin-bottom: 0;
   }
 
+  .jobs li a {
+    text-decoration: underline;
+    color: #e00668;
+  }
+
+  .jobs li a h3 {
+    margin-bottom: .3rem;
+  }
+
+  .jobs span {
+    font-size: .8rem;
+  }
+
   .job-description {
-    margin: .75rem 0 .5rem;
+    margin: .75rem 0 0;
   }
 
   .tags {
@@ -176,6 +176,11 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 1rem;
     }
+
+    .featured .content {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
   }
 
   @media (width >= 1290px) {
@@ -194,7 +199,7 @@
     }
 
     .about {
-      border-left: 1px solid black;
+      border-left: 1px solid rgba(53, 53, 53, .1);
     }
 
     .about h2 {

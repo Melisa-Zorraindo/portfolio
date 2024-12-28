@@ -2,9 +2,9 @@ export function load() {
 	return {
 		projects: [
 			{
-				title: 'MOLLIFY',
+				title: 'Mollify',
 				description:
-					'An open source LMS library that empowers teachers and students with AI-driven assistance.',
+					'Open source LMS library that empowers teachers and students with AI-driven assistance.',
 				type: 'featured',
 				image: '/project-images/lms.png',
 				tags: [
@@ -17,9 +17,8 @@ export function load() {
 				website: ''
 			},
 			{
-				title: 'TECHTOPIA',
-				description:
-					'E-commerce site created as part of the Noroff curriculum. With a minimalist design, the platform provides a clean and uncluttered browsing experience.',
+				title: 'Techtopia',
+				description: 'E-commerce site created as part of the Noroff curriculum.',
 				type: 'featured',
 				image: '/project-images/e-com.png',
 				tags: [
@@ -31,9 +30,8 @@ export function load() {
 				website: 'https://super-jalebi-36d00a.netlify.app/'
 			},
 			{
-				title: 'BIDDABLE',
-				description:
-					'Auction House Website with a comic book inspired aesthetic, crafted as part of the Noroff curriculum.',
+				title: 'Biddable',
+				description: 'Auction House Website crafted as part of the Noroff curriculum.',
 				type: 'featured',
 				image: '/project-images/auction.png',
 				tags: [
@@ -46,7 +44,7 @@ export function load() {
 				website: 'https://fluffy-shortbread-738c45.netlify.app/'
 			},
 			{
-				title: 'SOCIALS',
+				title: 'Socials',
 				description: 'Social Media Platform developed as part of the Noroff curriculum.',
 				type: 'more',
 				image: '/project-images/socials.png',
@@ -60,9 +58,8 @@ export function load() {
 				website: ''
 			},
 			{
-				title: 'FIT-FACTORY',
-				description:
-					"Inspiring Fitness and Nutrition Blog Site, developed as the exam project for the first year of Noroff's Front-end Development curriculum.",
+				title: 'Fit Factory',
+				description: 'Fitness and Nutrition blog-site developed as part of the Noroff curriculum.',
 				type: 'more',
 				image: '/project-images/fitfactory.png',
 				tags: [
@@ -75,9 +72,8 @@ export function load() {
 				website: ''
 			},
 			{
-				title: 'RAINY DAYS',
-				description:
-					"E-commerce site tailored for a winter jacket retailer, developed as part of Noroff's Front-end Development curriculum.",
+				title: 'Rainy Days',
+				description: 'E-commerce site developed as part of the Noroff curriculum.',
 				type: 'more',
 				image: '/project-images/rainy-days.png',
 				tags: [
@@ -90,8 +86,9 @@ export function load() {
 				website: ''
 			},
 			{
-				title: 'SCIENCE MUSEUM',
-				description: "Fun website developed as part of Noroff's Front-end Development curriculum.",
+				title: 'Science Museum',
+				description:
+					"Static website developed as part of Noroff's Front-end Development curriculum.",
 				type: 'more',
 				image: '/project-images/csm.png',
 				tags: [
@@ -103,9 +100,9 @@ export function load() {
 				website: 'https://csm-noroff-project.netlify.app/'
 			},
 			{
-				title: 'FITNESS CALCULATORS',
+				title: 'Fitness Calculators',
 				description:
-					'A calorie and a lifting calculator, crafted to assist dedicated gym goers in achieving their fitness goals.',
+					'Calorie and lifting calculator, crafted to assist gym goers in achieving their fitness goals.',
 				type: 'small',
 				image: '/project-images/calculators.png',
 				tags: [
@@ -117,9 +114,8 @@ export function load() {
 				website: 'https://fitness-calculators.netlify.app/'
 			},
 			{
-				title: 'EVENT COUNTDOWN',
-				description:
-					'Single Page Application (SPA) design to anticipate and celebrate your important events.',
+				title: 'Event Countdown',
+				description: 'Single Page Application designed to anticipate your important events.',
 				type: 'small',
 				image: '/project-images/event-countdown.png',
 				tags: [
@@ -132,9 +128,9 @@ export function load() {
 				website: ''
 			},
 			{
-				title: 'SOLAR SYSTEM QUIZ',
+				title: 'Solar System Quiz',
 				description:
-					'Captivating Single Page Application (SPA) that will transport you on an exhilarating cosmic adventure.',
+					'Single Page Application that will transport you on an exhilarating cosmic adventure.',
 				type: 'small',
 				image: '/project-images/ss-quiz.png',
 				tags: [

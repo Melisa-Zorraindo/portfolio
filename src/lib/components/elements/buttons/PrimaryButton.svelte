@@ -10,25 +10,25 @@
 
 <style>
   .corner-border {
-    background-color: black;
+    background-color: #e00668;
     color: white;
     position: relative;
     display: inline-block;
-    padding: 10px 20px;
+    padding: .7rem 1.5rem;
     text-decoration: none;
   }
 
   .corner-border:hover {
     background-color: transparent;
-    color: black;
-    transition: all .2s ease-in-out;
+    color: #e00668;
+    transition: all .3s ease-in-out;
   }
 
   .corner-border::before,
   .corner-border::after {
     content: '';
     position: absolute;
-    background-color: #000;
+    background-color: #e00668;
     transition: all .5s ease-in-out;
   }
 
@@ -43,10 +43,10 @@
   .corner-border span::after {
     content: '';
     position: absolute;
-    background-color: #000;
+    background-color: #e00668;
     width: 1px;
     height: 0;
-    transition: all .6s ease-in-out;
+    transition: all .5s ease-in-out;
   }
 
   .corner-border span::before {
@@ -67,18 +67,18 @@
   }
 
   .corner-border:hover::before {
-    width: 110%;
+    width: 100%;
   }
 
   .corner-border:hover span::before {
-    height: 120%;
+    height: 100%;
   }
 
   .corner-border:hover::after {
-    width: 110%;
+    width: 100%;
   }
 
   .corner-border:hover span::after {
-    height: 120%;
+    height: 100%;
   }
 </style>

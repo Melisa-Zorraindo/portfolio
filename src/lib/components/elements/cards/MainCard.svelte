@@ -24,8 +24,7 @@
   <div class="overlay">
     <div>
       <p>{project.description}</p>
-      <span>Code</span>
-      <span class="arrow">&xrarr;</span>
+      <span class="arrow">Code &xrarr;</span>
     </div>
   </div>
 </a>
@@ -34,14 +33,17 @@
 <style>
   .card-container {
     position: relative;
-    border: 1px solid rgb(102, 51, 153, .1);
-    padding-bottom: .5rem;
     flex-grow: 1;
     flex-basis: 0;
     display: grid;
-    grid-template-rows: auto auto;
-    background-color: #f7f7f7;
+    grid-template-rows: auto 7rem;
+    box-shadow: -0.1rem .1rem .4rem .1rem rgba(53, 53, 53, .1);
     overflow: hidden;
+    transition: all .5s ease-in-out;
+  }
+
+  .card-container:hover {
+    box-shadow: none;
   }
 
   .card-container:hover .overlay{
@@ -51,36 +53,38 @@
 
   .overlay{
     position: absolute;
-    background-color: rgba(53, 53, 53, 0.9);
+    background-color: rgba(53, 53, 53, .1);
     width: 100%;
     height: 100%;
-    top: 0;
+    bottom: 0;
     transform: scale(1.3);
     opacity: 0;
     transition: all .5s ease-in-out;
   }
 
-  .overlay div {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-15%, -50%);
-    color: #fff;
-  }
-
   .overlay p {
-    margin-bottom: 2rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    color: #000;
   }
 
   .overlay .arrow {
-    padding: .5rem;
-    background-color: rebeccapurple;
-    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    right: 1.5rem;
+    padding: .5rem 1.5rem;
+    background-color: #e00668;
+    color: #fff;
   }
 
-  .card-container:hover img,
   .card-container:hover .content {
     opacity: 0;
+  }
+
+  .card-container:hover img {
+    filter: blur(2px) grayscale(100%);
   }
 
   .content {

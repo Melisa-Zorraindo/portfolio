@@ -9,7 +9,7 @@
 <style>
   span {
     padding: .08rem .5rem;
-    background-color: rgb(102, 51, 153, .1);
-    font-size: .8rem;
+    background-color: rgba(15, 252, 190, .4);
+    font-size: .75rem;
   }
 </style>

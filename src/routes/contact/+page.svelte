@@ -82,7 +82,7 @@
   }
 
   .btn {
-    background-color: black;
+    background-color: #e00668;
     color: white;
     border: none;
     padding: .75rem 2rem;
@@ -91,7 +91,7 @@
 
   .btn:hover {
     background-color: transparent;
-    color: black;
+    color: #e00668;
     transition: all .2s ease-in-out;
     cursor: pointer;
   }
@@ -105,7 +105,7 @@
 .corner-border::after {
   content: '';
   position: absolute;
-  background-color: #000;
+  background-color: #e00668;
   transition: all 0.5s ease-in-out;
 }
 
@@ -132,7 +132,7 @@
 .btn-wrapper::after {
   content: '';
   position: absolute;
-  background-color: #000;
+  background-color: #e00668;
   width: 1px;
   height: 0;
   transition: all 0.6s ease-in-out;
@@ -149,19 +149,19 @@
 }
 
 .corner-border:hover::before {
-  width: 110%;
+  width: 100%;
 }
 
 .corner-border:hover::after {
-  width: 110%;
+  width: 100%;
 }
 
 .corner-border:hover .btn-wrapper::before {
-  height: 120%;
+  height: 100%;
 }
 
 .corner-border:hover .btn-wrapper::after {
-  height: 120%;
+  height: 100%;
 }
 
 @media (width >= 700px) {

@@ -1,8 +1,16 @@
 @font-face {
-	font-family: 'Source Code Pro';
-	src: url('/fonts/SourceCodePro-Regular.ttf');
-	font-weight: normal;
-	font-style: normal;
+	font-family: 'Inter-Light';
+	src: url('/fonts/Inter-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Bitter-Light';
+	src: url('/fonts/Bitter-Light.ttf');
+}
+
+@font-face {
+	font-family: 'Bitter-Regular';
+	src: url('/fonts/Bitter-Light.ttf');
 }
 
 * {
@@ -12,18 +20,30 @@
 }
 
 body {
-	font-family: 'Source Code Pro', serif;
+	font-family: 'Inter-Regular', sans-serif;
 	margin: 0 auto;
-	background-color: #f3f3f3;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	gap: 5rem;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Bitter-Light', sans-serif;
+}
+
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+p {
+	font-size: 0.9rem;
 }
 
 ul {
@@ -33,9 +53,9 @@ ul {
 
 /* Code for Firefox */
 ::-moz-selection {
-	background: #bbb;
+	background: #e2efe7;
 }
 
 ::selection {
-	background: #bbb;
+	background: #e2efe7;
 }

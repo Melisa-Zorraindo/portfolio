@@ -34,6 +34,7 @@
 	h1 {
 		font-size: 1.2rem;
 		font-weight: 400;
+		color: #e00668;
 	}
 
 	h2 {
@@ -41,7 +42,11 @@
 	}
 
 	p {
-		margin: 1rem 0;
+		margin: 1rem 0 .7rem;
+	}
+
+	.hobbies, .closure {
+		margin: .7rem 0;
 	}
 
 	.hobbies, .closure {

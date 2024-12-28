@@ -1,7 +1,9 @@
 <footer>
   <ul>
     <li>
-        Melisa Zorraindo
+      <address>
+        <a href="mailto:melisa.zorraindo@gmail.com">melisa.zorraindo@gmail.com</a>
+      </address>
     </li>
     <li class='last-li'>
       <a href="https://github.com/Melisa-Zorraindo" target="_blank" aria-label="github icon">
@@ -18,7 +20,6 @@
   footer {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    margin-bottom: 1rem;
   }
 
   ul {
@@ -31,18 +32,21 @@
 
   li {
     border-left: 1px solid black;
+    border-right: 1px solid black;
     padding: 0.5rem 1.5rem;
   }
 
   .last-li {
-    border-right: 1px solid black;
-    display: flex;
-    gap: 1rem;
+    display: none;
   }
 
   a {
     color: inherit;
     text-decoration: none;
+  }
+
+  address {
+    font-style: normal;
   }
 
   .gh-icon {
@@ -61,5 +65,17 @@
     display: inline-block;
     height: 1.25rem;
     width: 1.25rem;
+  }
+
+  @media (width >= 400px) {
+    li {
+      border-right: none;
+    }
+
+    .last-li {
+      border-right: 1px solid black;
+      display: flex;
+      gap: 1rem;
+    }
   }
 </style>

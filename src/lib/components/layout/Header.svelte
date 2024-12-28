@@ -33,8 +33,18 @@
   <nav class:menu-open={isOpen} id="nav">
     <ul class="menu">
       <li><a href="/">Home</a></li>
-      <li><a href="/projects">Projects</a> </li>
-      <li class="last-li"><a href="/contact">Contact</a></li>
+      <li class="last-li"><a href="/projects">Projects</a> </li>
+      <li class="contact-link">
+        <a href="https://github.com/Melisa-Zorraindo" target="_blank" aria-label="github icon">
+          <i class="gh-icon"></i>
+        </a>
+      </li>
+      <li class="contact-link">
+        <a href="https://www.linkedin.com/in/melisa-zorraindo-81719618b/" target="_blank" aria-label="linkedin icon">
+          <i class="li-icon"></i>
+        </a>
+      </li>
+      <!-- <li class="last-li"><a href="/contact">Contact</a></li> -->
     </ul>
   </nav>
 </header>
@@ -45,7 +55,7 @@
   }
 
   header {
-    background-color: black;
+    background-color: white;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -61,8 +71,8 @@
   }
 
   nav {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     width: 100%;
     text-align: center;
     position: absolute;
@@ -74,7 +84,7 @@
   }
 
   .burger {
-    background-color: white;
+    background-color: black;
     display: block;
     width: 2rem;
     height: 2px;
@@ -99,6 +109,24 @@
 
   .menu a {
     display: block;
+  }
+
+  .gh-icon {
+    background: url('/icons/github-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
+  }
+
+  .li-icon {
+    background: url('/icons/linkedin-square-icon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    height: 1.25rem;
+    width: 1.25rem;
   }
 
   button .line-top,
@@ -126,13 +154,12 @@
     height: 100vh;
   }
 
-  @media (min-width: 700px) {
+  @media (width >= 400px){
     header {
       padding: 0;
     }
 
     nav{
-      margin-top: 1rem;
       border-top: 1px solid black;
       border-bottom: 1px solid black;
       background-color: transparent;
@@ -152,12 +179,15 @@
 
     .menu li {
       border-left: 1px solid black;
-      padding: .6rem 1.5rem;
+      padding: .8rem 1.5rem;
     }
 
     .menu .last-li {
-      display: block;
       border-right: 1px solid black;
+    }
+
+    .contact-link {
+      display: none;
     }
   }
 </style>
