@@ -18,8 +18,7 @@
 
 <style>
   footer {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    background-color: var(--dark);
   }
 
   ul {
@@ -31,8 +30,6 @@
   }
 
   li {
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     padding: 0.5rem 1.5rem;
   }
 
@@ -41,8 +38,9 @@
   }
 
   a {
-    color: inherit;
+    color: var(--light);
     text-decoration: none;
+    font-family: 'Inter-Light', sans-serif;
   }
 
   address {
@@ -73,7 +71,7 @@
     }
 
     .last-li {
-      border-right: 1px solid black;
+      border-right: 1px solid var(--dark);
       display: flex;
       gap: 1rem;
     }

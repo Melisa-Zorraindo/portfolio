@@ -1,3 +1,14 @@
+:root {
+	--accent: #e00668;
+	--secondary: rgba(15, 252, 190, 0.4);
+	--selection: #0ffcbe;
+	--shadow: rgba(53, 53, 53, 0.1);
+	--light: #ecf0f1;
+	--dark: #151e27;
+	--smooth: all 0.5s ease-in-out;
+	--border-line: 1px solid var(--shadow);
+}
+
 @font-face {
 	font-family: 'Inter-Light';
 	src: url('/fonts/Inter-Light.ttf');
@@ -26,6 +37,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 5rem;
+	color: var(--dark);
 }
 
 h1,
@@ -53,9 +65,9 @@ ul {
 
 /* Code for Firefox */
 ::-moz-selection {
-	background: #e2efe7;
+	background: var(--selection);
 }
 
 ::selection {
-	background: #e2efe7;
+	background: var(--selection);
 }

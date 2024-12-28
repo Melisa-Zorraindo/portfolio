@@ -59,7 +59,7 @@
 
   .field input {
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--dark);
     outline: none;
     height: 1.5rem;
     background-color: inherit;
@@ -72,7 +72,7 @@
   .message {
     margin-top: 1rem;
     height: 5rem;
-    border: 1px solid black;
+    border: 1px solid var(--dark);
   }
 
   .btn-container {
@@ -82,8 +82,8 @@
   }
 
   .btn {
-    background-color: #e00668;
-    color: white;
+    background-color: var(--accent);
+    color: var(--light);
     border: none;
     padding: .75rem 2rem;
     font-family: inherit;
@@ -91,7 +91,7 @@
 
   .btn:hover {
     background-color: transparent;
-    color: #e00668;
+    color: var(--accent);
     transition: all .2s ease-in-out;
     cursor: pointer;
   }
@@ -105,7 +105,7 @@
 .corner-border::after {
   content: '';
   position: absolute;
-  background-color: #e00668;
+  background-color: var(--accent);
   transition: all 0.5s ease-in-out;
 }
 
@@ -132,7 +132,7 @@
 .btn-wrapper::after {
   content: '';
   position: absolute;
-  background-color: #e00668;
+  background-color: var(--accent);
   width: 1px;
   height: 0;
   transition: all 0.6s ease-in-out;

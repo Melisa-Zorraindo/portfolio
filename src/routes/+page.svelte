@@ -34,7 +34,7 @@
 	h1 {
 		font-size: 1.2rem;
 		font-weight: 400;
-		color: #e00668;
+		color: var(--accent);
 	}
 
 	h2 {

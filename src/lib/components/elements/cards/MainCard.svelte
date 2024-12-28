@@ -37,7 +37,7 @@
     flex-basis: 0;
     display: grid;
     grid-template-rows: auto 7rem;
-    box-shadow: -0.1rem .1rem .4rem .1rem rgba(53, 53, 53, .1);
+    box-shadow: -0.1rem .1rem .4rem .1rem var(--shadow);
     overflow: hidden;
     transition: all .5s ease-in-out;
   }
@@ -53,7 +53,7 @@
 
   .overlay{
     position: absolute;
-    background-color: rgba(53, 53, 53, .1);
+    background-color: var(--shadow);
     width: 100%;
     height: 100%;
     bottom: 0;
@@ -67,7 +67,7 @@
     bottom: 4rem;
     left: 1.5rem;
     right: 1.5rem;
-    color: #000;
+    color: var(--dark);
   }
 
   .overlay .arrow {
@@ -75,8 +75,8 @@
     bottom: 1rem;
     right: 1.5rem;
     padding: .5rem 1.5rem;
-    background-color: #e00668;
-    color: #fff;
+    background-color: var(--accent);
+    color: var(--light);
   }
 
   .card-container:hover .content {

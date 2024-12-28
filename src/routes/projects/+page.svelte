@@ -55,7 +55,7 @@
         {#each projects as project}
           {#if project.type === 'job'}
           <li>
-            <a href={project.website}>
+            <a href={project.website} target="_blank" rel="noopener noreferrer">
               <h3>{project.company}</h3>
             </a>
             <h4>{project.title}</h4>
@@ -96,7 +96,7 @@
 
   .search {
     border: none;
-    border-bottom: 1px solid rgba(53, 53, 53, .1);
+    border-bottom: var(--border-line);
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     width: 100%;
@@ -131,7 +131,7 @@
 
   .jobs li a {
     text-decoration: underline;
-    color: #e00668;
+    color: var(--accent);
   }
 
   .jobs li a h3 {
@@ -199,7 +199,7 @@
     }
 
     .about {
-      border-left: 1px solid rgba(53, 53, 53, .1);
+      border-left: var(--border-line);
     }
 
     .about h2 {

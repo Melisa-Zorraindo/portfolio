@@ -10,8 +10,8 @@
 
 <style>
   .corner-border {
-    background-color: #e00668;
-    color: white;
+    background-color: var(--accent);
+    color: var(--light);
     position: relative;
     display: inline-block;
     padding: .7rem 1.5rem;
@@ -20,7 +20,7 @@
 
   .corner-border:hover {
     background-color: transparent;
-    color: #e00668;
+    color: var(--accent);
     transition: all .3s ease-in-out;
   }
 
@@ -28,7 +28,7 @@
   .corner-border::after {
     content: '';
     position: absolute;
-    background-color: #e00668;
+    background-color: var(--accent);
     transition: all .5s ease-in-out;
   }
 
@@ -43,7 +43,7 @@
   .corner-border span::after {
     content: '';
     position: absolute;
-    background-color: #e00668;
+    background-color: var(--accent);
     width: 1px;
     height: 0;
     transition: all .5s ease-in-out;

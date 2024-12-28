@@ -55,7 +55,7 @@
   }
 
   header {
-    background-color: white;
+    background-color: var(--dark);
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -71,8 +71,8 @@
   }
 
   nav {
-    background-color: white;
-    color: black;
+    background-color: var(--dark);
+    color: var(--light);
     width: 100%;
     text-align: center;
     position: absolute;
@@ -80,11 +80,11 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
-    transition: all .5s ease-out;
+    transition: var(--smooth);
   }
 
   .burger {
-    background-color: black;
+    background-color: var(--light);
     display: block;
     width: 2rem;
     height: 2px;
@@ -109,6 +109,7 @@
 
   .menu a {
     display: block;
+    transition: var(--smooth);
   }
 
   .gh-icon {
@@ -133,6 +134,7 @@
   button .line-bottom,
   button .line-centre {
     transition: all .2s ease-out;
+    transition: var(--smooth);
   }
 
   button.open .line-top {
@@ -148,7 +150,7 @@
   }
 
   nav.menu-open {
-    transition: all .5s ease-out;
+    transition: var(--smooth);
     top: 100%;
     width: 100%;
     height: 100vh;
@@ -160,10 +162,8 @@
     }
 
     nav{
-      border-top: 1px solid black;
-      border-bottom: 1px solid black;
-      background-color: transparent;
-      color: black;
+      background-color: var(--dark);
+      color: var(--light);
     }
 
     .burger {
@@ -177,13 +177,25 @@
       align-items: center;
     }
 
-    .menu li {
-      border-left: 1px solid black;
-      padding: .8rem 1.5rem;
-    }
+    .menu a:hover {
+    color: var(--accent);
+  }
 
-    .menu .last-li {
-      border-right: 1px solid black;
+  .menu a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent);
+    transition: var(--smooth);
+  }
+
+  .menu a:hover::after {
+    width: 100%;
+  }
+
+    .menu li {
+      padding: .8rem 1.5rem;
     }
 
     .contact-link {
