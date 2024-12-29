@@ -4,7 +4,27 @@
   import type { ProjectType } from "../../types/projectTypes";
 
   export let data: { projects: ProjectType[] }
-  const { projects } = data
+  const jobs = data.projects.filter(project => project.type === 'job');
+  let { projects } = data
+
+  let searchContainer: boolean = false;
+
+  const handleSearch = (e: KeyboardEvent) => {
+    if (e.target) {
+      searchContainer = true;
+    }
+
+    if ((e.target as HTMLInputElement).value === '') {
+      searchContainer = false;
+      projects = data.projects;
+    }
+
+    const searchValue: string = (e.target as HTMLInputElement).value.toLowerCase();
+
+    projects = projects.filter((project) => {
+      return project.type !== 'job' && (project.title.toLowerCase().includes(searchValue) || project.description.toLowerCase().includes(searchValue) || project.tags.some(tag => tag.name.toLowerCase().includes(searchValue)));
+    });
+  }
 </script>
 
 <svelte:head>
@@ -14,15 +34,28 @@
 <div class="wrapper">
   <div class="column-one">
     <div class="search-container">
-      <input class="search" type="text" name="" id="" placeholder="Search...">
+      <input class="search" type="text" name="" id="" placeholder="Search..." onkeyup={handleSearch} />
     </div>
+    {#if searchContainer}
+    <section class="search-results">
+      <h2>Search results</h2>
+      {#if !projects.length}
+        <p>Your search didn't match any projects.</p>
+      {/if}
+      <div class="content">
+        {#each projects as project}
+          <MainCard {project} />
+        {/each}
+      </div>
+    </section>
+    {:else}
     <section class="featured">
       <h1>Featured projects</h1>
       <div class="content">
         {#each  projects as project}
-        {#if project.type === 'featured'}
-        <MainCard {project}/>
-        {/if}
+          {#if project.type === 'featured'}
+            <MainCard {project}/>
+          {/if}
         {/each}
       </div>
     </section>
@@ -46,29 +79,28 @@
         {/each}
       </div>
     </section>
+    {/if}
   </div>
   <div class="column-two">
     <section class="about">
       <div>
         <h2 class="cv-title">Where I worked</h2>
         <ul class="jobs">
-          {#each projects as project}
-            {#if project.type === 'job'}
+          {#each jobs as job}
             <li>
-              <a href={project.website} target="_blank" rel="noopener noreferrer">
-                <h3>{project.company}</h3>
+              <a href={job.website} target="_blank" rel="noopener noreferrer">
+                <h3>{job.company}</h3>
               </a>
-              <h4>{project.title}</h4>
-              <span>{project.startDate} - </span>
-              <span>{project.endDate}</span>
-              <p class="job-description">{project.description}</p>
+              <h4>{job.title}</h4>
+              <span>{job.startDate} - </span>
+              <span>{job.endDate}</span>
+              <p class="job-description">{job.description}</p>
                 <div class="tags">
-                  {#each project.tags as tag}
+                  {#each job.tags as tag}
                     <Tag name={tag.name} />
                   {/each}
                 </div>
-              </li>
-          {/if}
+            </li>
           {/each}
         </ul>
       </div>
