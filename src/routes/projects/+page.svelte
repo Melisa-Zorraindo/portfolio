@@ -28,7 +28,7 @@
 </script>
 
 <svelte:head>
-	<title>Melisa's portfolio :: Projects</title>
+	<title>Melisa's portfolio · Projects</title>
 </svelte:head>
 
 <div class="wrapper">

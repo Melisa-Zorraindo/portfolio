@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Melisa's portfolio :: Contact</title>
+	<title>Melisa's portfolio · Contact</title>
 </svelte:head>
 
 <div class="container">

@@ -10,7 +10,7 @@
 </script>
 
 <svelte:head>
-	<title>Melisa's portfolio :: Home</title>
+	<title>Melisa's portfolio · Home</title>
 </svelte:head>
 
 {#if heroSection}
