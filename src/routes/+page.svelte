@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+  import { fly } from 'svelte/transition';
+
 	import PrimaryButton from '$lib/components/elements/buttons/PrimaryButton.svelte';
 
 	let heroSection: boolean = false;
@@ -14,14 +16,14 @@
 </svelte:head>
 
 {#if heroSection}
-	<div class="container">
+	<div class="container" in:fly={{ y: 200, duration: 1000 }}>
 			<h1>MELISA ZORRAINDO</h1>
 			<h2>Software developer</h2>
 			<p>I build intuitive and efficient applications that make a positive impact. Whether it's streamlining backend processes, optimising data flow, or creating user-focused features, I enjoy tackling challenges and transforming ideas into robust solutions. </p>
 			<p class="hobbies">	When I'm not coding, I'm exploring the world, learning languages, or attempting (and failing) at photography.</p>
 			<p class="closure">Let's connect and create something amazing together!</p>
 		<div class="btn-container">
-			<PrimaryButton url="/projects" text="View projects" target="_self"/>
+			<PrimaryButton url="/projects" text="View projects"/>
 		</div>
 	</div>
 {/if}

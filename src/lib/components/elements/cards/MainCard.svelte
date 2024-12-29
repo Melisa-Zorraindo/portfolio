@@ -48,16 +48,16 @@
 
   .card-container:hover .overlay{
     opacity: 1;
-    transform: scale(1);
+    bottom: 0;
   }
 
   .overlay{
     position: absolute;
     background-color: var(--shadow);
     width: 100%;
-    height: 100%;
-    bottom: 0;
-    transform: scale(1.3);
+    height: 45%;
+    bottom: -7rem;
+    overflow: hidden;
     opacity: 0;
     transition: all .5s ease-in-out;
   }
@@ -104,5 +104,17 @@
     flex-wrap: wrap;
     column-gap: .5rem;
     row-gap: .5rem;
+  }
+
+  @media (550px <= width <= 610px) {
+    .overlay{
+      height: 50%;
+    }
+  }
+
+  @media (width >= 750px) {
+    .overlay{
+      height: 40%;
+    }
   }
 </style>

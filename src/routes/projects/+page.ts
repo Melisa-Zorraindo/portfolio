@@ -129,8 +129,7 @@ export function load() {
 			},
 			{
 				title: 'Solar System Quiz',
-				description:
-					'Single Page Application that will transport you on an exhilarating cosmic adventure.',
+				description: 'SPA that will transport you on an exhilarating cosmic adventure.',
 				type: 'small',
 				image: '/project-images/ss-quiz.png',
 				tags: [

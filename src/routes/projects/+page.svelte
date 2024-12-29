@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { fly } from 'svelte/transition';
   import MainCard from "$lib/components/elements/cards/MainCard.svelte";
   import Tag from "$lib/components/elements/Tag.svelte";
   import type { ProjectType } from "../../types/projectTypes";
@@ -31,7 +32,7 @@
 	<title>Melisa's portfolio · Projects</title>
 </svelte:head>
 
-<div class="wrapper">
+<div class="wrapper" in:fly={{ y: 200, duration: 1000 }}>
   <div class="column-one">
     <div class="search-container">
       <input class="search" type="text" name="" id="" placeholder="Search..." onkeyup={handleSearch} />

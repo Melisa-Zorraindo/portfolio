@@ -1,27 +1,35 @@
 <script lang="ts">
+  import { goto } from '$app/navigation';
+
   export let url: string;
   export let text: string;
-  export let target: string;
+
+  const handleClick = () => {
+      goto(url);
+  };
 </script>
 
-<a href={url} class="corner-border" target={target}>
+<button class="corner-border" onclick="{handleClick}">
 	<span>{text}</span>
-</a>
+</button>
 
 <style>
   .corner-border {
+    border: none;
     background-color: var(--accent);
     color: var(--light);
     position: relative;
     display: inline-block;
     padding: .7rem 1.5rem;
     text-decoration: none;
+    font-family: 'Inter-Regular', sans-serif;
   }
 
   .corner-border:hover {
     background-color: transparent;
     color: var(--accent);
     transition: all .3s ease-in-out;
+    cursor: pointer;
   }
 
   .corner-border::before,
