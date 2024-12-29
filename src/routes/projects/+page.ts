@@ -153,6 +153,7 @@ export function load() {
 				tags: [
 					{ name: 'JavaScript', logo: 'bxl-javascript' },
 					{ name: 'Node.js', logo: '' },
+					{ name: 'Mocha', logo: '' },
 					{ name: 'Java', logo: '' },
 					{ name: 'Spring Boot', logo: '' }
 				],

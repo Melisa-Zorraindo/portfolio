@@ -112,10 +112,12 @@
     font-size: 1rem;
     width: 100%;
     color: inherit;
+    height: 2rem;
+    padding-left: .5rem;
   }
 
   .search:focus {
-    outline: none;
+    outline: 1px solid var(--accent);
   }
 
   .content {
