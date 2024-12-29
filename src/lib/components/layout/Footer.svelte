@@ -48,7 +48,7 @@
   }
 
   .gh-icon {
-    background: url('/icons/github-icon.svg');
+    background: url('/icons/github.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -57,7 +57,7 @@
   }
 
   .li-icon {
-    background: url('/icons/linkedin-square-icon.svg');
+    background: url('/icons/linkedin.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -71,7 +71,7 @@
     }
 
     .last-li {
-      border-right: 1px solid var(--dark);
+      /* border-right: 1px solid var(--dark); */
       display: flex;
       gap: 1rem;
     }

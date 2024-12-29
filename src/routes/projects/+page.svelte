@@ -50,31 +50,42 @@
   <div class="column-two">
     <section class="about">
       <div>
-        <h2>Where I worked</h2>
-      <ul class="jobs">
-        {#each projects as project}
-          {#if project.type === 'job'}
-          <li>
-            <a href={project.website} target="_blank" rel="noopener noreferrer">
-              <h3>{project.company}</h3>
-            </a>
-            <h4>{project.title}</h4>
-            <span>{project.startDate} - </span>
-            <span>{project.endDate}</span>
-            <p class="job-description">{project.description}</p>
-            <div class="tags">
-              {#each project.tags as tag}
-              <Tag name={tag.name} />
-              {/each}
-            </div>
-          </li>
+        <h2 class="cv-title">Where I worked</h2>
+        <ul class="jobs">
+          {#each projects as project}
+            {#if project.type === 'job'}
+            <li>
+              <a href={project.website} target="_blank" rel="noopener noreferrer">
+                <h3>{project.company}</h3>
+              </a>
+              <h4>{project.title}</h4>
+              <span>{project.startDate} - </span>
+              <span>{project.endDate}</span>
+              <p class="job-description">{project.description}</p>
+                <div class="tags">
+                  {#each project.tags as tag}
+                    <Tag name={tag.name} />
+                  {/each}
+                </div>
+              </li>
           {/if}
           {/each}
         </ul>
       </div>
       <div>
         <h2>Tech I use</h2>
-        <p>A paragraph or a list of technologies used in the projects I have contributed to.</p>
+        <ul class="tech">
+          <li><i class="tech-icon node"></i></li>
+          <li><i class="tech-icon javascript"></i></li>
+          <li><i class="tech-icon mocha"></i></li>
+          <li><i class="tech-icon java"></i></li>
+          <li><i class="tech-icon spring"></i></li>
+          <li><i class="tech-icon mongo"></i></li>
+          <li><i class="tech-icon mysql"></i></li>
+          <li><i class="tech-icon typescript"></i></li>
+          <li><i class="tech-icon sveltekit"></i></li>
+          <li><i class="tech-icon react"></i></li>
+        </ul>
       </div>
     </section>
   </div>
@@ -154,6 +165,59 @@
     row-gap: .5rem;
   }
 
+  .tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .tech-icon {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .node {
+    background: no-repeat center/cover url('/icons/nodejs.svg');
+  }
+
+  .javascript {
+    background: no-repeat center/cover url('/icons/javascript.svg');
+  }
+
+  .mocha {
+    background: no-repeat center/cover url('/icons/mocha.svg');
+  }
+
+  .java {
+    background: no-repeat center/cover url('/icons/java.svg');
+  }
+
+  .spring {
+    background: no-repeat center/cover url('/icons/spring.svg');
+  }
+
+  .mongo {
+    background: no-repeat center/cover url('/icons/mongodb.svg');
+  }
+
+  .mysql {
+    background: no-repeat center/cover url('/icons/mysql.svg');
+  }
+
+  .typescript {
+    background: no-repeat center/cover url('/icons/typescript.svg');
+  }
+
+  .sveltekit {
+    background: no-repeat center/cover url('/icons/sveltekit.svg');
+  }
+
+  .react {
+    background: no-repeat center/cover url('/icons/react.svg');
+  }
+
   @media (550px <= width <= 1032px) {
     .content {
       grid-template-columns: repeat(2, 1fr);
@@ -202,7 +266,7 @@
       border-left: var(--border-line);
     }
 
-    .about h2 {
+    .cv-title {
       margin: 0;
     }
 	}

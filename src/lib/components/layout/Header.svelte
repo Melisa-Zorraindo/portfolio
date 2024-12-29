@@ -113,7 +113,7 @@
   }
 
   .gh-icon {
-    background: url('/icons/github-icon.svg');
+    background: url('/icons/github.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -122,7 +122,7 @@
   }
 
   .li-icon {
-    background: url('/icons/linkedin-square-icon.svg');
+    background: url('/icons/linkedin.svg');
     background-repeat: no-repeat;
     background-size: cover;
     display: inline-block;
@@ -159,11 +159,6 @@
   @media (width >= 400px){
     header {
       padding: 0;
-    }
-
-    nav{
-      background-color: var(--dark);
-      color: var(--light);
     }
 
     .burger {
