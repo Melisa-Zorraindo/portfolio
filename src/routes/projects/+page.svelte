@@ -114,6 +114,7 @@
           <li><i class="tech-icon java"></i></li>
           <li><i class="tech-icon spring"></i></li>
           <li><i class="tech-icon mongo"></i></li>
+          <li><i class="tech-icon docker"></i></li>
           <li><i class="tech-icon mysql"></i></li>
           <li><i class="tech-icon typescript"></i></li>
           <li><i class="tech-icon sveltekit"></i></li>
@@ -235,6 +236,10 @@
 
   .mongo {
     background: no-repeat center/cover url('/icons/mongodb.svg');
+  }
+
+  .docker {
+    background: no-repeat center/cover url('/icons/docker.svg');
   }
 
   .mysql {
