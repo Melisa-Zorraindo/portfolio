@@ -7,7 +7,6 @@
 </script>
 
 <ParaglideJS {i18n}>
-
 	<Header />
 
 	<main>
@@ -15,7 +14,6 @@
 	</main>
 
 	<Footer />
-
 </ParaglideJS>
 
 <style>

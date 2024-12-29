@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-  import { fly } from 'svelte/transition';
+	import { fly } from 'svelte/transition';
 
 	import PrimaryButton from '$lib/components/elements/buttons/PrimaryButton.svelte';
 
@@ -17,13 +17,20 @@
 
 {#if heroSection}
 	<div class="container" in:fly={{ y: 200, duration: 1000 }}>
-			<h1>MELISA ZORRAINDO</h1>
-			<h2>Software developer</h2>
-			<p>I build intuitive and efficient applications that make a positive impact. Whether it's streamlining backend processes, optimising data flow, or creating user-focused features, I enjoy tackling challenges and transforming ideas into robust solutions. </p>
-			<p class="hobbies">	When I'm not coding, I'm exploring the world, learning languages, or attempting (and failing) at photography.</p>
-			<p class="closure">Let's connect and create something amazing together!</p>
+		<h1>MELISA ZORRAINDO</h1>
+		<h2>Software developer</h2>
+		<p>
+			I build intuitive and efficient applications that make a positive impact. Whether it's
+			streamlining backend processes, optimising data flow, or creating user-focused features, I
+			enjoy tackling challenges and transforming ideas into robust solutions.
+		</p>
+		<p class="hobbies">
+			When I'm not coding, I'm exploring the world, learning languages, or attempting (and failing)
+			at photography.
+		</p>
+		<p class="closure">Let's connect and create something amazing together!</p>
 		<div class="btn-container">
-			<PrimaryButton url="/projects" text="View projects"/>
+			<PrimaryButton url="/projects" text="View projects" />
 		</div>
 	</div>
 {/if}
@@ -44,14 +51,16 @@
 	}
 
 	p {
-		margin: 1rem 0 .7rem;
+		margin: 1rem 0 0.7rem;
 	}
 
-	.hobbies, .closure {
-		margin: .7rem 0;
+	.hobbies,
+	.closure {
+		margin: 0.7rem 0;
 	}
 
-	.hobbies, .closure {
+	.hobbies,
+	.closure {
 		display: none;
 	}
 
@@ -66,9 +75,9 @@
 			max-width: 1000px;
 		}
 
-		.hobbies, .closure {
+		.hobbies,
+		.closure {
 			display: block;
 		}
 	}
-
 </style>

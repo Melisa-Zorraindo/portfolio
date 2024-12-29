@@ -1,15 +1,15 @@
 <script lang="ts">
-  export let name: string;
+	export let name: string;
 </script>
 
 <span>
-  {name}
+	{name}
 </span>
 
 <style>
-  span {
-    padding: .08rem .5rem;
-    background-color: rgba(15, 252, 190, .4);
-    font-size: .75rem;
-  }
+	span {
+		padding: 0.08rem 0.5rem;
+		background-color: rgba(15, 252, 190, 0.4);
+		font-size: 0.75rem;
+	}
 </style>
